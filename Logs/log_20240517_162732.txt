@@ -1,0 +1,3288 @@
+2024-05-17 16:27:32,132 - __main__ - INFO - Directory Tree:
+
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── __init__.py
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── tests/
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── .gitignore
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── Logs/
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── src/
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── local_storage/
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── README.md
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── requirements.txt
+2024-05-17 16:27:32,133 - __main__ - INFO - ├── venv/
+2024-05-17 16:27:32,134 - __main__ - INFO - ├── logger.py
+2024-05-17 16:27:32,134 - __main__ - INFO - ├── log_it_allv1.py
+2024-05-17 16:27:32,134 - __main__ - INFO - ├── .git/
+2024-05-17 16:27:32,134 - __main__ - INFO - └── log_it_allv2.py
+2024-05-17 16:27:32,134 - __main__ - INFO - File contents: /home/dbordwel/iChain/__init__.py
+
+
+2024-05-17 16:27:32,134 - __main__ - INFO - File contents: /home/dbordwel/iChain/.gitignore
+venv/
+
+2024-05-17 16:27:32,134 - __main__ - INFO - File contents: /home/dbordwel/iChain/README.md
+# iChain: The User-Owned AI Development Platform
+
+## Vision
+
+To democratize AI development and create a more equitable and abundant future through a user-owned platform that empowers individuals to contribute their data, compute resources, and expertise while being rewarded for their contributions.
+
+## Mission
+
+To build a platform that fosters a collaborative ecosystem where users can:
+
+* **Contribute valuable data:** Users own and control their data, deciding how it's used for AI model development.
+* **Train open-sourced AI models:**  Contribute to the creation of accessible and powerful AI models that benefit everyone. 
+* **Earn rewards:**  Users are compensated with SGC (SyngergiCoin) for their contributions to data, compute resources, and participation in the platform's governance.
+* **Access cutting-edge AI services:**  Utilize a marketplace of open-source AI models and services powered by the platform's network.
+
+## How It Works
+
+* **User Onboarding:**  Users sign up, configure privacy settings, and connect their Discord accounts for seamless data sharing.
+* **Data Uploading:**  Users upload data to their local devices, which is automatically processed, anonymized, and packaged into training sets.
+* **Data Governance:**  A decentralized autonomous organization (DAO) governs data usage, ensuring user consent and control. 
+* **Open-Source Models:**  AI models are trained using contributed data and are made available to the community via an API.
+* **Reward System:**  Users earn SGC for contributing data, providing compute resources, or participating in the DAO.  
+* **AI Services Marketplace:**  Users can purchase datasets, access AI services, and contribute to projects using SGC.
+
+## Use Cases
+
+* **Medical AI:** Researchers and companies can access a vast dataset of anonymized medical records to train more accurate and diverse AI models for healthcare. 
+* **World History Data:** Users can contribute historical documents, newspapers, and family legends to create a comprehensive historical dataset for AI-powered research and cultural understanding. 
+* **Industry-Specific Datasets:**  iChain can be used to build datasets for specific industries, such as finance, marketing, or research.
+
+## Installation
+
+1. **Install Python:** If you don't have Python installed, download it from [https://www.python.org/downloads/](https://www.python.org/downloads/).
+2. **Install Dependencies:** Install the required packages using `pip install -r requirements.txt`.
+3. **Get Ollama:** Download Ollama and follow the instructions to set it up: [https://ollama.ai/docs/](https://ollama.ai/docs/).
+4. **Set up API Keys:**  If you plan to use paid AI services, obtain the necessary API keys for providers like Google, Groq, etc.  
+5. **Run the iChain Platform:**  Start the iChain platform by running the `main.py` script. 
+
+## Contributing
+
+Contributions are welcome!  Please fork the repository, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Join the Community
+
+Connect with us on Discord to discuss the project, get help, and join the growing community: [Insert Discord link here]
+
+
+## Installation
+
+### Running iChain Directly
+
+For development and testing, you can run iChain directly from the source code:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/iChain.git
+   ```
+
+2. **Navigate to the Project Directory:**
+   ```bash
+   cd iChain
+   ```
+
+3. **(Highly Recommended) Create a Virtual Environment:** 
+   This isolates your project's dependencies. 
+   ```bash
+   python3 -m venv .venv 
+   source .venv/bin/activate
+   ```
+
+4. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+   ```bash
+    pip install torch torchvision transformers langchain langchain-groq sentence-transformers efficientnet-pytorch PIL opencv-python gtts pydub SpeechRecognition keras scikit-learn kneed pyclustering pandas numpy matplotlib scipy huggingface_hub flask flask_cors 
+   ```
+5. **Run the iChain Platform:**
+   ```bash
+   python src/main.py
+   ```
+
+### Future Installation Methods
+
+* **`pip` Installation (Coming Soon):**  We're working towards making iChain easily installable via `pip`. This will allow you to simply run `pip install iChain` to use the platform in your own projects.
+
+Let us know if you encounter any issues during installation! 
+
+
+
+2024-05-17 16:27:32,135 - __main__ - INFO - File contents: /home/dbordwel/iChain/requirements.txt
+astroid==1.6.6
+backports.functools-lru-cache==1.6.6
+configparser==4.0.2
+enum34==1.1.10
+futures==3.4.0
+isort==4.3.21
+lazy-object-proxy==1.6.0
+mccabe==0.6.1
+pylint==1.9.5
+singledispatch==3.7.0
+six==1.16.0
+wrapt==1.15.0
+Pillow
+torch
+torchvision
+torchvision.transforms
+transformers
+langchain
+langchain_groq
+sentence_transformers
+efficientnet_pytorch
+PIL
+cv2
+gtts
+pydub
+speech_recognition
+keras
+scikit-learn
+kneed
+pyclustering
+transformers
+scikit-learn
+openai
+pytorch_lightning
+pandas
+numpy
+matplotlib
+scipy
+huggingface_hub
+flask
+flask_cors
+
+2024-05-17 16:27:32,135 - __main__ - INFO - File contents: /home/dbordwel/iChain/logger.py
+# logging_wrapper.py
+
+import logging
+import sys
+import os
+from datetime import datetime
+
+# Get the directory of this script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Create 'Logs' directory relative to the script
+log_directory = os.path.join(script_dir, "Logs")
+os.makedirs(log_directory, exist_ok=True)
+log_filename = os.path.join(
+    log_directory, f"log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler(log_filename), logging.StreamHandler(sys.stdout)],
+)
+
+logger = logging.getLogger(__name__)
+
+# Print directory tree
+def print_directory_tree(root_dir, prefix=""):
+    if prefix == "":
+        logger.info("Directory Tree:\n")
+    items = os.listdir(root_dir)
+    for i, item in enumerate(items):
+        path = os.path.join(root_dir, item)
+        is_last = i == len(items) - 1
+        if os.path.isdir(path):
+            logger.info(f"{prefix}{'└── ' if is_last else '├── '}{item}/")
+            print_directory_tree(path, prefix + ("    " if is_last else "│   "))
+        else:
+            logger.info(f"{prefix}{'└── ' if is_last else '├── '}{item}")
+
+# Print the directory tree starting from the script directory
+print_directory_tree(script_dir)
+
+# Log the contents of the source files recursively
+def log_source_files(root_dir):
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        # Skip specified directories
+        dirnames[:] = [d for d in dirnames if d not in {"venv" ".venv", "__pycache__", "Logs"}]
+        for filename in filenames:
+            if filename.endswith((".pyc", ".pyo")):  # Skip compiled Python files
+                continue
+            file_path = os.path.join(dirpath, filename)
+            try:
+                with open(file_path, "r") as f:
+                    content = f.read()
+                    logger.info(f"File contents: {file_path}\n{content}\n")
+            except Exception as e:
+                logger.error(f"Failed to read file {file_path}: {e}")
+
+# Log source files starting from the current directory
+log_source_files(script_dir)
+
+2024-05-17 16:27:32,135 - __main__ - INFO - File contents: /home/dbordwel/iChain/log_it_allv1.py
+# logging_wrapper.py
+
+import logging
+import sys
+import os
+from datetime import datetime
+
+# Get the directory of this script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Create 'Logs' directory relative to the script
+log_directory = os.path.join(script_dir, "Logs")
+os.makedirs(log_directory, exist_ok=True)
+log_filename = os.path.join(
+    log_directory, f"log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler(log_filename), logging.StreamHandler(sys.stdout)],
+)
+
+logger = logging.getLogger(__name__)
+
+# ... (rest of the StreamToLogger class code is the same)
+
+# Log the contents of the source files recursively
+def log_source_files(root_dir):
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        # Skip specified directories
+        dirnames[:] = [d for d in dirnames if d not in {".git", "..venv/", "__pycache__", "Logs"}]
+        for filename in filenames:
+            if filename.endswith((".pyc", ".pyo")): # Skip compiled Python files
+                continue
+            file_path = os.path.join(dirpath, filename)
+            try:
+                with open(file_path, "r") as f:
+                    content = f.read()
+                    logger.info(f"File contents: {file_path}\n{content}\n")
+            except Exception as e:
+                logger.error(f"Failed to read file {file_path}: {e}")
+
+# Log source files starting from the parent directory of the script
+log_source_files(os.path.dirname(script_dir)) # One level up
+
+# Run the main application (modified to use relative paths)
+"""try:
+    from .src.main import main # Assuming iChain is one level up 
+
+    main()
+except ModuleNotFoundError as e:
+    logger.error(f"Module not found: {e}")
+except Exception as e:
+    logger.error(f"An error occurred while running the main application: {e}") """
+
+2024-05-17 16:27:32,135 - __main__ - INFO - File contents: /home/dbordwel/iChain/log_it_allv2.py
+# logging_wrapper.py
+
+import logging
+import sys
+import os
+from datetime import datetime
+
+# Get the directory of this script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Create 'Logs' directory relative to the script
+log_directory = os.path.join(script_dir, "Logs")
+os.makedirs(log_directory, exist_ok=True)
+log_filename = os.path.join(
+    log_directory, f"log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler(log_filename), logging.StreamHandler(sys.stdout)],
+)
+
+logger = logging.getLogger(__name__)
+
+# Print directory tree (limited to top-level)
+def print_directory_tree(root_dir, prefix=""):
+    if prefix == "":
+        logger.info("Directory Tree:\n")
+    items = os.listdir(root_dir)
+    for i, item in enumerate(items):
+        path = os.path.join(root_dir, item)
+        is_last = i == len(items) - 1
+        if os.path.isdir(path):
+            # Only print the top-level directory name
+            logger.info(f"{prefix}{'└── ' if is_last else '├── '}{item}/")
+        else:
+            logger.info(f"{prefix}{'└── ' if is_last else '├── '}{item}")
+
+# Print the directory tree starting from the script directory
+print_directory_tree(script_dir)
+
+# # Print the directory tree with a depth of 2 (commented out)
+# def print_directory_tree(root_dir, prefix="", max_depth=1):
+#     if prefix == "":
+#         logger.info("Directory Tree:\n")
+#     items = os.listdir(root_dir)
+#     for i, item in enumerate(items):
+#         path = os.path.join(root_dir, item)
+#         is_last = i == len(items) - 1
+#         if os.path.isdir(path) and max_depth > 0:
+#             logger.info(f"{prefix}{'└── ' if is_last else '├── '}{item}/")
+#             print_directory_tree(path, prefix + ("    " if is_last else "│   "), max_depth - 1)
+#         else:
+#             logger.info(f"{prefix}{'└── ' if is_last else '├── '}{item}")
+
+# # Uncomment the following line to print with depth 2
+# # print_directory_tree(script_dir, max_depth=2) 
+
+
+# Log the contents of the source files recursively
+def log_source_files(root_dir):
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        # Skip specified directories
+        dirnames[:] = [d for d in dirnames if d not in {".git", "venv", "__pycache__", "Logs"}]
+        for filename in filenames:
+            if filename.endswith((".pyc", ".pyo")):  # Skip compiled Python files
+                continue
+            file_path = os.path.join(dirpath, filename)
+            try:
+                with open(file_path, "r") as f:
+                    content = f.read()
+                    logger.info(f"File contents: {file_path}\n{content}\n")
+            except Exception as e:
+                logger.error(f"Failed to read file {file_path}: {e}")
+
+# Log source files starting from the current directory
+log_source_files(script_dir)
+
+# Log source files starting from the parent directory of the script
+# log_source_files(os.path.dirname(script_dir)) # One level up
+
+# Run the main application (modified to use relative paths)
+"""
+try:
+    from .src.main import main # Assuming iChain is one level up 
+
+    main()
+except ModuleNotFoundError as e:
+    logger.error(f"Module not found: {e}")
+except Exception as e:
+    logger.error(f"An error occurred while running the main application: {e}")
+"""
+
+2024-05-17 16:27:32,136 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_discord_bot_tool.py
+# iChain/tests/test_discord_bot_tool.py
+import unittest
+from unittest.mock import MagicMock, patch
+from iChain.src.iChain.tools.discord_bot import DiscordBotTool
+import discord
+import os
+
+class TestDiscordBotTool(unittest.TestCase):
+    """
+    This class contains tests for the DiscordBotTool.
+    """
+
+    @patch('discord.ext.commands.Bot.run')
+    @patch('discord.ext.commands.Bot.__init__', return_value=None)
+    def setUp(self, mock_bot_init, mock_bot_run):
+        """
+        Set up environment before each test.
+        """
+        self.bot_token = "dummy_token"
+        self.bot_tool = DiscordBotTool(self.bot_token)
+
+    @patch('discord.ext.commands.Context.send')
+    async def test_info_command(self, mock_send):
+        """
+        Test that the info command processes queries correctly.
+        """
+        ctx = MagicMock()
+        query = "What is the weather today?"
+
+        await self.bot_tool.info(ctx, query=query)
+        mock_send.assert_called_once_with(f"Received your query: {query}")
+
+    @patch('discord.ext.commands.Context.send')
+    async def test_info_command_with_exception(self, mock_send):
+        """
+        Test that the info command handles exceptions correctly.
+        """
+        ctx = MagicMock()
+        query = "What is the weather today?"
+
+        with patch.object(self.bot_tool, 'info', side_effect=Exception("Test exception")):
+            await self.bot_tool.info(ctx, query=query)
+            mock_send.assert_called_once_with("Error processing your query.")
+
+    @patch('discord.ext.commands.Bot.run')
+    def test_run(self, mock_run):
+        """
+        Test that the bot runs with the provided token.
+        """
+        self.bot_tool.run()
+        mock_run.assert_called_once_with(self.bot_token)
+
+    @patch('discord.ext.commands.Bot.run', side_effect=Exception("Run error"))
+    def test_run_with_exception(self, mock_run):
+        """
+        Test that the bot handles exceptions during run.
+        """
+        with self.assertRaises(Exception):
+            self.bot_tool.run()
+        mock_run.assert_called_once_with(self.bot_token)
+
+    def test_bot_token_not_set(self):
+        """
+        Test that a ValueError is raised if the bot token is not set.
+        """
+        with patch.dict(os.environ, {}, clear=True):
+            with self.assertRaises(ValueError):
+                DiscordBotTool(os.getenv("DISCORD_BOT_TOKEN"))
+
+2024-05-17 16:27:32,136 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_image_processing_task.py
+# iChain/tests/test_image_processing_task.py
+import unittest
+from unittest.mock import MagicMock, patch
+from iChain.src.iChain.tasks.image_processing import ImageProcessingTask
+from iChain.src.iChain.agents.vision import VisionAgent
+from src.iChain.config.llm_config import get_models
+
+class TestImageProcessingTask(unittest.TestCase):
+    """
+    This class contains tests for the ImageProcessingTask.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        # Mock VisionAgent
+        self.vision_agent = MagicMock(spec=VisionAgent)
+        # Mock memory and llm
+        self.memory = MagicMock()
+        self.llm = MagicMock()
+
+        # Initialize ImageProcessingTask with mocked VisionAgent, memory, and llm
+        self.task = ImageProcessingTask(self.vision_agent)
+
+    def test_run_with_valid_image_path(self):
+        """
+        Test the run method with a valid image path.
+        """
+        # Mock the process_image method
+        self.vision_agent.process_image.return_value = "Extracted text from image"
+        
+        image_path = "valid_image_path.jpg"
+        result = self.task.run(image_path)
+        
+        self.assertEqual(result, "Extracted text from image")
+        self.vision_agent.process_image.assert_called_once_with(image_path)
+
+    def test_run_with_no_image_path(self):
+        """
+        Test the run method with no image path provided.
+        """
+        with self.assertRaises(ValueError):
+            self.task.run("")
+
+    def test_run_with_error_processing_image(self):
+        """
+        Test the run method when an error occurs during image processing.
+        """
+        self.vision_agent.process_image.side_effect = Exception("Processing error")
+        
+        image_path = "error_image_path.jpg"
+        result = self.task.run(image_path)
+        
+        self.assertEqual(result, "Error processing image.")
+        self.vision_agent.process_image.assert_called_once_with(image_path)
+
+2024-05-17 16:27:32,136 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_assistant.py
+# iChain/tests/test_assistant.py
+import unittest
+from unittest.mock import MagicMock
+from iChain.src.agents.assistant import PersonalAssistantAgent
+from iChain.src.memory.short_term import ShortTermMemory
+from iChain.src.tools.embedding_tool import EmbeddingTool
+from iChain.src.config.llm_config import get_modelsp
+import sys
+print(sys.path)
+
+class TestPersonalAssistantAgent(unittest.TestCase):
+    """
+    This class contains tests for the PersonalAssistantAgent.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        # Mock dependencies
+        self.memory = ShortTermMemory()
+        self.embedder = MagicMock(spec=EmbeddingTool)
+        self.llm = get_models("groq", "llama3-8b-8192")
+        self.agent = PersonalAssistantAgent(self.memory, self.embedder, self.llm)
+
+    def test_receive_message(self):
+        """
+        Test that the agent correctly processes an input message.
+        """
+        self.embedder.embed.return_value = "embedded_message"
+        response = self.agent.receive_message("Hello, how are you?")
+        self.assertIsNotNone(response)  # Check that we get a response
+        self.assertIsInstance(response, str)  # Ensure the response is a string
+        self.embedder.embed.assert_called_once_with("Hello, how are you?")
+
+    def test_receive_message_error(self):
+        """
+        Test that the agent handles errors during message processing.
+        """
+        self.embedder.embed.side_effect = Exception("Embedding error")
+        response = self.agent.receive_message("Hello, how are you?")
+        self.assertEqual(response, "Sorry, there was an error processing your message.")
+
+    def test_process_message(self):
+        """
+        Test that the agent processes the embedded message correctly.
+        """
+        response = self.agent.process_message("embedded_message")
+        self.assertEqual(response, "Thank you for your message. I'm currently learning to respond more effectively.")
+
+    def test_log_interaction(self):
+        """
+        Test that the agent logs the interaction correctly.
+        """
+        self.agent.log_interaction("Hello, how are you?", "I am fine, thank you.")
+        # Here we should check the log file or mock the logging to assert the log output
+
+2024-05-17 16:27:32,136 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_embedding_tool.py
+# iChain/tests/test_embedding_tool.py
+import unittest
+from unittest.mock import patch, MagicMock
+from iChain.src.iChain.tools.embedding_tool import EmbeddingTool
+import openai
+
+class TestEmbeddingTool(unittest.TestCase):
+    """
+    This class contains tests for the EmbeddingTool.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        self.api_key = "dummy_api_key"
+        self.embedding_tool = EmbeddingTool(self.api_key)
+
+    @patch('openai.Embedding.create')
+    def test_generate_embedding_success(self, mock_create):
+        """
+        Test that generate_embedding successfully generates embeddings.
+        """
+        # Mock response from OpenAI API
+        mock_create.return_value = {
+            "data": [0.1, 0.2, 0.3]
+        }
+        
+        text = "Example text for embedding."
+        embedding = self.embedding_tool.generate_embedding(text)
+        
+        self.assertIsNotNone(embedding)  # Check that we get a response
+        self.assertIsInstance(embedding, list)  # Ensure the response is a list
+        self.assertEqual(embedding, [0.1, 0.2, 0.3])  # Check the returned embedding
+
+    @patch('openai.Embedding.create')
+    def test_generate_embedding_failure(self, mock_create):
+        """
+        Test that generate_embedding handles failures correctly.
+        """
+        # Mock an exception raised by the OpenAI API
+        mock_create.side_effect = Exception("Test exception")
+        
+        text = "Example text for embedding."
+        embedding = self.embedding_tool.generate_embedding(text)
+        
+        self.assertIsNone(embedding)  # Check that the response is None in case of failure
+
+2024-05-17 16:27:32,136 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/__init__.py
+# iChain/tests/__init__.py
+
+# Import test modules here if necessary to allow easier access from test runners or for package organization
+from .test_assistant import TestPersonalAssistantAgent
+from .test_cleaner import TestDataCleaningAgent
+from .test_valuator import TestDataValuationAgent
+from .test_vision import TestVisionAgent
+from .test_memory_long_term import TestLongTermMemory
+from .test_memory_short_term import TestShortTermMemory
+from .test_file_handler import TestFileHandler
+from .test_google_drive import TestGoogleDriveTool
+from .test_discord_bot_tool import TestDiscordBotTool
+from .test_embedding_tool import TestEmbeddingTool
+from .test_anonymization_task import TestAnonymizationTask
+from .test_conversation_task import TestConversationTask
+from .test_data_upload_task import TestDataUploadTask
+from .test_image_processing_task import TestImageProcessingTask
+
+# You can define additional imports for other test classes as you expand your testing suite
+
+2024-05-17 16:27:32,136 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_cleaner.py
+# iChain/tests/test_cleaner.py
+
+import unittest
+from unittest.mock import MagicMock
+from iChain.src.agents.cleaner import DataCleaningAgent
+from iChain.src.config.llm_config import get_models
+from iChain.src.memory.short_term import ShortTermMemory
+
+
+class TestDataCleaningAgent(unittest.TestCase):
+    """
+    This class contains tests for the DataCleaningAgent.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        self.memory = ShortTermMemory()
+        self.llm = get_models("groq", "llama3-8b-8192")
+        self.agent = DataCleaningAgent(self.memory, self.llm)
+
+    def test_anonymize_data_email(self):
+        """
+        Test that the agent correctly anonymizes email addresses.
+        """
+        sample_data = "Contact me at example@example.com."
+        expected_output = "Contact me at [REDACTED]."
+        result = self.agent.anonymize_data(sample_data)
+        self.assertEqual(result, expected_output)
+
+    def test_anonymize_data_phone_number(self):
+        """
+        Test that the agent correctly anonymizes phone numbers.
+        """
+        sample_data = "My phone number is 123-456-7890."
+        expected_output = "My phone number is [REDACTED]."
+        result = self.agent.anonymize_data(sample_data)
+        self.assertEqual(result, expected_output)
+
+    def test_anonymize_data_ssn(self):
+        """
+        Test that the agent correctly anonymizes social security numbers.
+        """
+        sample_data = "My SSN is 123-45-6789."
+        expected_output = "My SSN is [REDACTED]."
+        result = self.agent.anonymize_data(sample_data)
+        self.assertEqual(result, expected_output)
+
+    def test_process_data(self):
+        """
+        Test the overall data processing including logging.
+        """
+        sample_data = "Contact me at example@example.com or call 123-456-7890."
+        expected_output = "Contact me at [REDACTED] or call [REDACTED]."
+        result = self.agent.process_data(sample_data)
+        self.assertEqual(result, expected_output)
+
+    def test_log_cleaning(self):
+        """
+        Test that the logging function logs the correct data.
+        """
+        original_data = "Contact me at example@example.com."
+        anonymized_data = "Contact me at [REDACTED]."
+        
+        # Mocking the logger
+        with self.assertLogs('iChain.src.agents.cleaner', level='INFO') as log:
+            self.agent.log_cleaning(original_data, anonymized_data)
+            self.assertIn("Original: Contact me at example@example.com.", log.output[0])
+            self.assertIn("Anonymized: Contact me at [REDACTED].", log.output[0])
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+2024-05-17 16:27:32,137 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_vision.py
+# iChain/tests/test_vision.py
+# iChain/tests/test_vision.py
+
+import unittest
+from unittest.mock import patch, MagicMock
+from ..src.iChain.agents.vision import VisionAgent
+from ..src.iChain.config.llm_config import get_models
+import cv2
+import numpy as np
+
+class TestVisionAgent(unittest.TestCase):
+    """
+    This class contains tests for the VisionAgent.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        memory = True  # Mocked memory object
+        self.llm = get_models("ollama", "llava")
+        self.agent = VisionAgent(memory, self.llm)
+
+    @patch('cv2.imread')
+    @patch('pytesseract.image_to_string')
+    def test_process_image_success(self, mock_image_to_string, mock_imread):
+        """
+        Test that the agent correctly processes an image and extracts text.
+        """
+        # Mocking OpenCV and pytesseract functions
+        mock_imread.return_value = np.zeros((100, 100, 3), dtype=np.uint8)  # Mocked image data
+        mock_image_to_string.return_value = "Extracted text from image."
+
+        image_path = "dummy_path.jpg"
+        extracted_text = self.agent.process_image(image_path)
+        self.assertEqual(extracted_text, "Extracted text from image.")
+
+    @patch('cv2.imread')
+    def test_process_image_not_found(self, mock_imread):
+        """
+        Test that the agent handles image not found error.
+        """
+        mock_imread.return_value = None  # Mock image not found
+
+        image_path = "dummy_path.jpg"
+        extracted_text = self.agent.process_image(image_path)
+        self.assertEqual(extracted_text, "Error processing image")
+
+    @patch('cv2.imread')
+    @patch('pytesseract.image_to_string')
+    def test_process_image_exception(self, mock_image_to_string, mock_imread):
+        """
+        Test that the agent handles exceptions during image processing.
+        """
+        mock_imread.side_effect = Exception("Test error")  # Mock an exception
+
+        image_path = "dummy_path.jpg"
+        extracted_text = self.agent.process_image(image_path)
+        self.assertEqual(extracted_text, "Error processing image")
+
+    @patch('logging.info')
+    def test_log_image_processing(self, mock_logging_info):
+        """
+        Test the logging of image processing.
+        """
+        image_path = "dummy_path.jpg"
+        extracted_text = "Extracted text from image."
+
+        self.agent.log_image_processing(image_path, extracted_text)
+        mock_logging_info.assert_called()
+
+2024-05-17 16:27:32,137 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_anonymization_task.py
+# iChain/tests/test_anonymization_task.py
+import unittest
+from unittest.mock import MagicMock
+from iChain.src.iChain.tasks.anonymization import AnonymizationTask
+from iChain.src.iChain.agents.cleaner import DataCleaningAgent
+
+class TestAnonymizationTask(unittest.TestCase):
+    """
+    This class contains tests for the AnonymizationTask.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        # Mock the DataCleaningAgent
+        self.mock_cleaner = MagicMock(spec=DataCleaningAgent)
+        self.task = AnonymizationTask(self.mock_cleaner)
+
+    def test_run_anonymization(self):
+        """
+        Test that the task correctly anonymizes the data.
+        """
+        sample_data = "Here is a sample data containing sensitive information like email@example.com."
+        expected_output = "Here is a sample data containing sensitive information like [REDACTED]."
+
+        # Mock the anonymize_data method
+        self.mock_cleaner.anonymize_data.return_value = expected_output
+        
+        result = self.task.run(sample_data)
+        self.assertEqual(result, expected_output)
+        self.mock_cleaner.anonymize_data.assert_called_once_with(sample_data)
+
+    def test_run_no_data(self):
+        """
+        Test that the task raises a ValueError when no data is provided.
+        """
+        with self.assertRaises(ValueError):
+            self.task.run("")
+
+    def test_logging_initialization(self):
+        """
+        Test that the initialization logs the correct message.
+        """
+        with self.assertLogs('iChain.src.iChain.tasks.anonymization', level='INFO') as log:
+            _ = AnonymizationTask(self.mock_cleaner)
+            self.assertIn("[Task: AnonymizationTask] Initialized with data_cleaning_agent:", log.output[0])
+
+    def test_logging_anonymized_data(self):
+        """
+        Test that the anonymized data is logged correctly.
+        """
+        sample_data = "Here is a sample data containing sensitive information like email@example.com."
+        expected_output = "Here is a sample data containing sensitive information like [REDACTED]."
+        self.mock_cleaner.anonymize_data.return_value = expected_output
+        
+        with self.assertLogs('iChain.src.iChain.tasks.anonymization', level='INFO') as log:
+            self.task.run(sample_data)
+            self.assertIn("[Task: AnonymizationTask] Anonymized data:", log.output[0])
+
+2024-05-17 16:27:32,137 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_google_drive.py
+# iChain/tests/test_google_drive.py
+import unittest
+from unittest.mock import patch, MagicMock
+from iChain.src.iChain.tools.google_drive import GoogleDriveTool
+import os
+
+class TestGoogleDriveTool(unittest.TestCase):
+    """
+    This class contains tests for the GoogleDriveTool.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        self.token_file = "path_to_token.json"
+        self.google_drive_tool = GoogleDriveTool(self.token_file)
+
+    @patch('iChain.src.iChain.tools.google_drive.Credentials.from_authorized_user_file')
+    @patch('iChain.src.iChain.tools.google_drive.build')
+    def test_authenticate_google_drive(self, mock_build, mock_creds):
+        """
+        Test the authenticate_google_drive method of the GoogleDriveTool.
+        """
+        mock_creds.return_value = MagicMock()
+        mock_build.return_value = MagicMock()
+        service = self.google_drive_tool.authenticate_google_drive(self.token_file)
+        self.assertIsNotNone(service)
+        mock_creds.assert_called_once_with(self.token_file, scopes=["https://www.googleapis.com/auth/drive"])
+        mock_build.assert_called_once_with("drive", "v3", credentials=mock_creds.return_value)
+
+    @patch('iChain.src.iChain.tools.google_drive.MediaFileUpload')
+    def test_upload_file(self, mock_media_file_upload):
+        """
+        Test the upload_file method of the GoogleDriveTool.
+        """
+        self.google_drive_tool.service = MagicMock()
+        mock_media_file_upload.return_value = MagicMock()
+        file_id = "file_id_123"
+        self.google_drive_tool.service.files().create().execute.return_value = {"id": file_id}
+        result = self.google_drive_tool.upload_file("sample_data.txt")
+        self.assertEqual(result, file_id)
+        self.google_drive_tool.service.files().create.assert_called_once()
+
+    @patch('os.path.exists')
+    @patch('iChain.src.iChain.tools.google_drive.Credentials.from_authorized_user_file')
+    @patch('iChain.src.iChain.tools.google_drive.build')
+    def test_token_file_not_found(self, mock_build, mock_creds, mock_path_exists):
+        """
+        Test the GoogleDriveTool initialization with a non-existing token file.
+        """
+        mock_path_exists.return_value = False
+        with self.assertRaises(FileNotFoundError):
+            GoogleDriveTool(self.token_file)
+
+2024-05-17 16:27:32,137 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_memory_short_term.py
+# iChain/tests/test_memory_short_term.py
+# iChain/tests/test_short_term_memory.py
+
+import unittest
+from iChain.src.iChain.memory.short_term import ShortTermMemory
+
+
+class TestShortTermMemory(unittest.TestCase):
+    """
+    This class contains tests for the ShortTermMemory class.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        self.memory = ShortTermMemory(max_size=3)
+
+    def test_store_memory(self):
+        """
+        Test that memory is correctly stored.
+        """
+        self.memory.store_memory("key1", "value1")
+        self.memory.store_memory("key2", "value2")
+        self.assertEqual(self.memory.retrieve_memory("key1"), "value1")
+        self.assertEqual(self.memory.retrieve_memory("key2"), "value2")
+
+    def test_retrieve_memory_not_found(self):
+        """
+        Test that retrieving a non-existent memory returns None.
+        """
+        self.assertIsNone(self.memory.retrieve_memory("non_existent_key"))
+
+    def test_memory_overflow(self):
+        """
+        Test that memory overflow behaves correctly (oldest memory is discarded).
+        """
+        self.memory.store_memory("key1", "value1")
+        self.memory.store_memory("key2", "value2")
+        self.memory.store_memory("key3", "value3")
+        self.memory.store_memory("key4", "value4")  # This should push out "key1"
+        self.assertIsNone(self.memory.retrieve_memory("key1"))
+        self.assertEqual(self.memory.retrieve_memory("key2"), "value2")
+        self.assertEqual(self.memory.retrieve_memory("key3"), "value3")
+        self.assertEqual(self.memory.retrieve_memory("key4"), "value4")
+
+    def test_clear_memory(self):
+        """
+        Test that clearing the memory works correctly.
+        """
+        self.memory.store_memory("key1", "value1")
+        self.memory.store_memory("key2", "value2")
+        self.memory.clear_memory()
+        self.assertIsNone(self.memory.retrieve_memory("key1"))
+        self.assertIsNone(self.memory.retrieve_memory("key2"))
+
+2024-05-17 16:27:32,137 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_file_handler.py
+# iChain/tests/test_file_handler.py
+import unittest
+from unittest.mock import patch, MagicMock
+from iChain.src.local_storage.file_handler import FileHandler, FileEventHandler
+import os
+
+class TestFileHandler(unittest.TestCase):
+    """
+    This class contains tests for the FileHandler.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        self.directory = "C:/CrewAI/iChain/WatchedDirectory"
+        self.file_handler = FileHandler(self.directory)
+
+    @patch('iChain.src.local_storage.file_handler.Observer')
+    def test_start(self, MockObserver):
+        """
+        Test the start method of the FileHandler.
+        """
+        mock_observer_instance = MockObserver.return_value
+        self.file_handler.start()
+        mock_observer_instance.schedule.assert_called_once()
+        mock_observer_instance.start.assert_called_once()
+
+    @patch('iChain.src.local_storage.file_handler.Observer')
+    def test_stop(self, MockObserver):
+        """
+        Test the stop method of the FileHandler.
+        """
+        mock_observer_instance = MockObserver.return_value
+        self.file_handler.start()
+        self.file_handler.stop()
+        mock_observer_instance.stop.assert_called_once()
+        mock_observer_instance.join.assert_called_once()
+
+    @patch('iChain.src.local_storage.file_handler.logger')
+    def test_process_file(self, mock_logger):
+        """
+        Test the process_file method of the FileHandler.
+        """
+        test_file_path = "C:/CrewAI/iChain/WatchedDirectory/test_file.txt"
+        self.file_handler.process_file(test_file_path)
+        mock_logger.info.assert_called_with(f"Processing file: {test_file_path}")
+
+    def test_file_event_handler_on_created(self):
+        """
+        Test the on_created method of the FileEventHandler.
+        """
+        process_file_callback = MagicMock()
+        event_handler = FileEventHandler(process_file_callback)
+        mock_event = MagicMock()
+        mock_event.is_directory = False
+        mock_event.src_path = "C:/CrewAI/iChain/WatchedDirectory/test_file.txt"
+
+        event_handler.on_created(mock_event)
+        process_file_callback.assert_called_with(mock_event.src_path)
+
+2024-05-17 16:27:32,137 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_conversation_task.py
+# iChain/tests/test_conversation_task.py
+import unittest
+from unittest.mock import MagicMock
+from iChain.src.iChain.tasks.conversation import ConversationTask
+from iChain.src.iChain.agents.assistant import PersonalAssistantAgent
+
+class TestConversationTask(unittest.TestCase):
+    """
+    This class contains tests for the ConversationTask.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        # Mock the PersonalAssistantAgent
+        self.mock_assistant = MagicMock(spec=PersonalAssistantAgent)
+        self.task = ConversationTask(self.mock_assistant)
+
+    def test_run_conversation(self):
+        """
+        Test that the task correctly processes the input data through the assistant agent.
+        """
+        user_input = "Hello, how can you help me today?"
+        expected_output = "I can assist you with various tasks."
+
+        # Mock the receive_message method
+        self.mock_assistant.receive_message.return_value = expected_output
+
+        result = self.task.run(user_input)
+        self.assertEqual(result, expected_output)
+        self.mock_assistant.receive_message.assert_called_once_with(user_input)
+
+    def test_run_no_input_data(self):
+        """
+        Test that the task raises a ValueError when no input data is provided.
+        """
+        with self.assertRaises(ValueError):
+            self.task.run("")
+
+    def test_logging_initialization(self):
+        """
+        Test that the initialization logs the correct message.
+        """
+        with self.assertLogs('iChain.src.iChain.tasks.conversation', level='INFO') as log:
+            _ = ConversationTask(self.mock_assistant)
+            self.assertIn("[Task: ConversationTask] Initialized with assistant_agent:", log.output[0])
+
+    def test_logging_conversation(self):
+        """
+        Test that the conversation data is logged correctly.
+        """
+        user_input = "Hello, how can you help me today?"
+        expected_output = "I can assist you with various tasks."
+        self.mock_assistant.receive_message.return_value = expected_output
+
+        with self.assertLogs('iChain.src.iChain.tasks.conversation', level='INFO') as log:
+            self.task.run(user_input)
+            self.assertIn("[Task: ConversationTask] User input: Hello, how can you help me today? Assistant response: I can assist you with various tasks.", log.output[0])
+
+2024-05-17 16:27:32,138 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_memory_long_term.py
+# iChain/tests/test_memory_long_term.py
+import unittest
+import os
+from iChain.src.iChain.memory.long_term import LongTermMemory
+
+class TestLongTermMemory(unittest.TestCase):
+    """
+    This class contains tests for the LongTermMemory class.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        # Define the path for the test storage file
+        self.test_storage_path = "C:\\CrewAI\\iChain\\tests\\ltm_test_storage.txt"
+        # Initialize LongTermMemory with the test storage file
+        self.ltm = LongTermMemory(self.test_storage_path)
+
+        # Ensure the test storage file is empty before each test
+        with open(self.test_storage_path, "w") as file:
+            file.write("")
+
+    def tearDown(self):
+        """
+        Clean up environment after each test.
+        """
+        # Remove the test storage file after each test
+        if os.path.exists(self.test_storage_path):
+            os.remove(self.test_storage_path)
+
+    def test_save_memory(self):
+        """
+        Test that a piece of memory can be saved correctly.
+        """
+        key = "test_key"
+        value = "test_value"
+        self.ltm.save_memory(key, value)
+        
+        # Verify the content of the storage file
+        with open(self.test_storage_path, "r") as file:
+            lines = file.readlines()
+        
+        self.assertEqual(lines[0].strip(), f"{key}:{value}")
+
+    def test_retrieve_memory(self):
+        """
+        Test that a piece of memory can be retrieved correctly.
+        """
+        key = "test_key"
+        value = "test_value"
+        self.ltm.save_memory(key, value)
+        
+        retrieved_value = self.ltm.retrieve_memory(key)
+        self.assertEqual(retrieved_value, value)
+
+    def test_retrieve_memory_not_found(self):
+        """
+        Test that retrieving a non-existent key returns None.
+        """
+        retrieved_value = self.ltm.retrieve_memory("non_existent_key")
+        self.assertIsNone(retrieved_value)
+
+2024-05-17 16:27:32,138 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_memory.py
+
+
+2024-05-17 16:27:32,138 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_data_upload_task.py
+# iChain/tests/test_data_upload_task.py
+import unittest
+from unittest.mock import MagicMock
+from iChain.src.iChain.tasks.data_upload import DataUploadTask
+from iChain.src.iChain.tools.google_drive import GoogleDriveTool
+from iChain.src.iChain.agents.valuator import DataValuationAgent
+from src.iChain.config.llm_config import get_models
+
+class TestDataUploadTask(unittest.TestCase):
+    """
+    This class contains tests for the DataUploadTask.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        # Mock the GoogleDriveTool
+        self.mock_storage_tool = MagicMock(spec=GoogleDriveTool)
+        # Mock the DataValuationAgent
+        self.mock_valuator = MagicMock(spec=DataValuationAgent)
+
+        # Create the DataUploadTask with mocked dependencies
+        self.task = DataUploadTask(self.mock_storage_tool, self.mock_valuator)
+
+    def test_run_successful_upload(self):
+        """
+        Test that the task correctly processes and uploads data when the value is high.
+        """
+        sample_data = {
+            "data": "This is sample data that has been anonymized.",
+            "metadata": {"source": "user_interaction", "type": "text"},
+        }
+
+        # Mock the assess_data method to return high value
+        self.mock_valuator.assess_data.return_value = (100, "High value - contains rich and relevant content")
+        # Mock the upload method to simulate a successful upload
+        self.mock_storage_tool.upload.return_value = "file_id_123"
+
+        result = self.task.run(sample_data)
+        self.assertIn("Data uploaded successfully", result)
+        self.mock_valuator.assess_data.assert_called_once_with(sample_data["data"])
+        self.mock_storage_tool.upload.assert_called_once_with(sample_data["data"], sample_data["metadata"])
+
+    def test_run_low_value_data(self):
+        """
+        Test that the task does not upload data when the value is low.
+        """
+        sample_data = {
+            "data": "This is low-value data.",
+            "metadata": {"source": "user_interaction", "type": "text"},
+        }
+
+        # Mock the assess_data method to return low value
+        self.mock_valuator.assess_data.return_value = (30, "Low value - not worth uploading")
+
+        result = self.task.run(sample_data)
+        self.assertEqual(result, "Data not uploaded due to low value.")
+        self.mock_valuator.assess_data.assert_called_once_with(sample_data["data"])
+        self.mock_storage_tool.upload.assert_not_called()
+
+    def test_run_invalid_data(self):
+        """
+        Test that the task raises a ValueError when invalid data is provided.
+        """
+        with self.assertRaises(ValueError):
+            self.task.run({"metadata": {"source": "user_interaction", "type": "text"}})
+
+    def test_logging_initialization(self):
+        """
+        Test that the initialization logs the correct message.
+        """
+        with self.assertLogs('iChain.src.iChain.tasks.data_upload', level='INFO') as log:
+            _ = DataUploadTask(self.mock_storage_tool, self.mock_valuator)
+            self.assertIn("[Task: DataUploadTask] Initialized with storage_tool:", log.output[0])
+
+    def test_logging_data_assessment(self):
+        """
+        Test that the data assessment is logged correctly.
+        """
+        sample_data = {
+            "data": "This is sample data that has been anonymized.",
+            "metadata": {"source": "user_interaction", "type": "text"},
+        }
+        self.mock_valuator.assess_data.return_value = (100, "High value - contains rich and relevant content")
+
+        with self.assertLogs('iChain.src.iChain.tasks.data_upload', level='INFO') as log:
+            self.task.run(sample_data)
+            self.assertIn("[Task: DataUploadTask] Data assessment: High value - contains rich and relevant content, Value: 100", log.output[0])
+
+2024-05-17 16:27:32,138 - __main__ - INFO - File contents: /home/dbordwel/iChain/tests/test_valuator.py
+# iChain/tests/test_valuator.py
+# iChain/tests/test_valuation.py
+
+import unittest
+from unittest.mock import MagicMock
+from iChain.src.iChain.agents.valuator import DataValuationAgent
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
+class TestDataValuationAgent(unittest.TestCase):
+    """
+    This class contains tests for the DataValuationAgent.
+    """
+
+    def setUp(self):
+        """
+        Set up environment before each test.
+        """
+        memory = True  # Mocked memory object
+        self.llm = MagicMock()
+        self.agent = DataValuationAgent(memory, self.llm)
+
+    def test_assess_data_high_value(self):
+        """
+        Test that the agent correctly assesses high-value data.
+        """
+        self.llm.generate_response.return_value = "Relevant content"
+        sample_data = "This data contains significant insights and detailed information."
+        value, assessment = self.agent.assess_data(sample_data)
+        self.assertEqual(value, 100)
+        self.assertIn("high value", assessment.lower())
+
+    def test_assess_data_low_value(self):
+        """
+        Test that the agent correctly assesses low-value data.
+        """
+        self.llm.generate_response.return_value = "REDACTED"
+        sample_data = "Generic data with little unique content."
+        value, assessment = self.agent.assess_data(sample_data)
+        self.assertEqual(value, 50)
+        self.assertIn("medium value", assessment.lower())
+
+    def test_assess_data_with_exception(self):
+        """
+        Test that the agent handles exceptions gracefully.
+        """
+        self.agent.evaluate_data_quality = MagicMock(side_effect=Exception("Test error"))
+        sample_data = "This is a sample data."
+        value, assessment = self.agent.assess_data(sample_data)
+        self.assertIsNone(value)
+        self.assertIn("error assessing data", assessment.lower())
+
+    def test_evaluate_data_quality(self):
+        """
+        Test the evaluation of data quality.
+        """
+        sample_data = "This is a sample data with useful content."
+        tokens = word_tokenize(sample_data)
+        stop_words = set(stopwords.words('english'))
+        filtered_tokens = [token for token in tokens if token.lower() not in stop_words]
+
+        self.llm.generate_response.return_value = "Relevant content"
+        value, assessment = self.agent.evaluate_data_quality(sample_data)
+        self.assertEqual(value, 100)
+        self.assertIn("high value", assessment.lower())
+
+    def test_log_assessment(self):
+        """
+        Test the logging of assessment.
+        """
+        sample_data = "This is a sample data."
+        value = 100
+        assessment = "High value - contains rich and relevant content"
+        self.agent.log_assessment(sample_data, value, assessment)
+        # Check the log file for the correct log entry if needed
+
+2024-05-17 16:27:32,138 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/__init__.py
+# iChain/src/iChain/__init__.py
+
+from .agents import *
+from .tasks import *
+from .tools import *
+from .memory import *
+from .models import *
+from .crew import CrewManager
+
+# You can include additional initializations or default configurations here if needed.
+
+
+2024-05-17 16:27:32,139 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/config.py
+# iChain/src/config.py
+import os
+import logging
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+LOGS_DIR = os.path.join(PROJECT_ROOT, "Logs")
+
+# Dynamic logging level (default to INFO)
+LOGGING_LEVEL = logging.INFO 
+
+def setup_logging():
+    """Configures logging for the entire iChain project."""
+    logging.basicConfig(
+        filename=os.path.join(LOGS_DIR, 'iChain_log.txt'), 
+        level=LOGGING_LEVEL, 
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
+
+# Call this at the start of your main script or application entry point
+setup_logging() 
+
+2024-05-17 16:27:32,139 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/crew.py
+# iChain/src/iChain/crew.py
+import os
+from .agents import (
+    PersonalAssistantAgent,
+    DataCleaningAgent,
+    DataValuationAgent,
+    VisionAgent,
+    ManagerAgent,
+)
+from .tasks import (
+    ConversationTask,
+    AnonymizationTask,
+    DataUploadTask,
+    ImageProcessingTask,
+)
+from .tools import GoogleDriveTool, DiscordBotTool, EmbeddingTool
+from .memory import LongTermMemory, ShortTermMemory
+from .config.llm_config import get_models
+from crewai.process import Process
+from crewai import Crew
+
+class CrewManager:
+    """
+    CrewManager class to manage different agents and assign tasks within the CrewAI environment.
+    """
+
+    def __init__(self):
+        # Initialize memory components
+        self.long_term_memory = LongTermMemory("path_to_long_term_storage.db")
+        self.short_term_memory = ShortTermMemory()
+
+        # Initialize tools
+        self.google_drive_tool = GoogleDriveTool("path_to_token.json")
+        self.discord_bot_tool = DiscordBotTool(os.getenv("DISCORD_BOT_TOKEN"))
+        self.embedding_tool = EmbeddingTool(os.getenv("OPENAI_API_KEY"))
+
+        # Initialize agents
+        self.assistant = PersonalAssistantAgent(
+            self.short_term_memory, self.embedding_tool, get_models("groq", "llama3-8b-8192")
+        )
+        self.cleaner = DataCleaningAgent(
+            memory=self.short_term_memory, llm=get_models("groq", "llama3-8b-8192")
+        )
+        self.valuator = DataValuationAgent(
+            memory=self.short_term_memory, llm=get_models("groq", "llama3-8b-8192")
+        )
+        self.vision_agent = VisionAgent(
+            memory=self.short_term_memory, llm=get_models("ollama", "llava-v1")
+        )
+        self.manager_agent = ManagerAgent(
+            memory=self.short_term_memory, llm=get_models("groq", "llama3-70b-8192")
+        )
+
+        # Setup tasks
+        self.conversation_task = ConversationTask(self.assistant)
+        self.anonymization_task = AnonymizationTask(self.cleaner)
+        self.data_upload_task = DataUploadTask(self.google_drive_tool, self.valuator)
+        self.image_processing_task = ImageProcessingTask(self.vision_agent)
+
+        # Setup the crew
+        self.crew = Crew(
+            agents=[
+                self.assistant,
+                self.cleaner,
+                self.valuator,
+                self.vision_agent,
+            ],
+            tasks=[
+                self.conversation_task,
+                self.anonymization_task,
+                self.data_upload_task,
+                self.image_processing_task,
+            ],
+            process=Process.hierarchical,
+            manager_llm=self.manager_agent,
+            verbose=True,
+            memory=True,
+            embedder=self.embedding_tool,
+            full_output=True,
+            output_log_file="C:\\CrewAI\\iChain\\Logs\\crew_log.txt",
+        )
+
+    def run(self):
+        """
+        Start the Crew operation.
+        """
+        # Kickoff the crew's task execution
+        result = self.crew.kickoff()
+        print(result)
+        print("Crew is operational and running...")
+
+
+# Instantiation and running the crew
+if __name__ == "__main__":
+    crew_manager = CrewManager()
+    crew_manager.run()
+
+# Future Enhancements:
+# - Implement dynamic task allocation based on agent availability and skill set.
+# - Develop agent performance metrics to reward models and improve task efficiency.
+# - Add intelligent features like NLP and ML for autonomous decision-making.
+# - Introduce innovative ideas such as live model fine-tuning or adaptive learning mechanisms.
+# - Enhance the system to allow the manager agent to adjust short-term memory size dynamically and implement selective transfer to long-term memory.
+# - Incorporate user-friendly authentication methods for Google Drive and other services.
+# - Develop a streamlined process for integrating new tools and models.
+
+2024-05-17 16:27:32,139 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/main.py
+# iChain/src/iChain/main.py
+import logging
+import os
+from datetime import datetime
+from .crew import Crew
+from src.config.llm_config import get_models
+from .config import setup_logging 
+
+
+# Call this right at the beginning
+setup_logging() 
+
+# Set up logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+log_filename = os.path.join(log_directory, f"log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt")
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler(log_filename),
+        logging.StreamHandler()
+    ]
+)
+
+logger = logging.getLogger(__name__)
+
+# Crew Initialization and Task Execution
+def main():
+    logger.info("Initializing the Crew...")
+
+    # Initialize models
+    memory = True  # Memory imported from CrewAI
+    embedder = get_models("ollama", "llama-base")  # Embedding model
+    llm_assistant = get_models("groq", "llama3-8b-8192")  # LLM for the assistant agent
+    llm_cleaner = get_models("groq", "llama3-8b-8192")  # LLM for the cleaning agent
+
+    # Initialize the Crew with specific agent models
+    crew = Crew(
+        assistant_llm=llm_assistant,
+        cleaner_llm=llm_cleaner,
+        embedder=embedder,
+        memory=memory
+    )
+
+    logger.info("Crew initialized.")
+
+    # Example usage of Crew's capabilities
+    try:
+        # Simulate conversation
+        user_input = "Hello, how can you help me today?"
+        conversation_response = crew.conversation_task.run(user_input)
+        logger.info(f"Conversation response: {conversation_response}")
+
+        # Simulate data anonymization
+        sample_data = "Contact me at example@example.com or call 123-456-7890."
+        anonymized_data = crew.anonymization_task.run(sample_data)
+        logger.info(f"Anonymized Data: {anonymized_data}")
+
+        # Simulate data upload
+        upload_result = crew.data_upload_task.run({
+            "data": anonymized_data,
+            "metadata": {"source": "user_interaction", "type": "text"}
+        })
+        logger.info(f"Upload Result: {upload_result}")
+
+        # Simulate image processing
+        image_path = "path_to_your_image.jpg"  # Make sure to provide the correct path to your image file
+        extracted_text = crew.image_processing_task.run(image_path)
+        logger.info(f"Extracted Text from Image: {extracted_text}")
+
+    except Exception as e:
+        logger.error(f"An error occurred during task execution: {e}")
+
+    logger.info("Crew operations completed.")
+
+if __name__ == "__main__":
+    main()
+
+2024-05-17 16:27:32,140 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tools/embedding_tool.py
+# iChain/src/iChain/tools/embedding_tool.py
+
+import openai
+import os
+import logging
+
+# Setup logging configuration
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(
+    filename=os.path.join(log_directory, 'embedding_tool_log.txt'),
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
+
+class EmbeddingTool:
+    """
+    This tool is used to generate embeddings from text using the Llama3-8b model or any similar model.
+    Embeddings are vector representations of text that can be used in various applications such as
+    similarity measurement, data retrieval, and more.
+    """
+
+    def __init__(self, api_key):
+        """
+        Initializes the Embedding Tool with the necessary API key for the embedding service.
+
+        Args:
+            api_key (str): API key for accessing the model via OpenAI or a similar service.
+        """
+        self.api_key = api_key
+        openai.api_key = api_key
+        logger.info(f"Initialized EmbeddingTool with API key.")
+
+    def generate_embedding(self, text):
+        """
+        Generates an embedding for the given text.
+
+        Args:
+            text (str): The text to generate an embedding for.
+
+        Returns:
+            list: The embedding vector of the given text.
+        """
+        try:
+            response = openai.Embedding.create(
+                model="text-embedding-ada-002",  # Adjust model identifier based on actual availability and requirements
+                input=text,
+            )
+            embedding_vector = response["data"]
+            logger.info(f"Generated embedding for text: {text}")
+            return embedding_vector
+        except Exception as e:
+            logger.error(f"Failed to generate embedding: {str(e)}")
+            return None
+
+2024-05-17 16:27:32,140 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tools/__init__.py
+# iChain/src/iChain/tools/__init__.py
+
+from .google_drive import GoogleDriveTool
+from .discord_bot import DiscordBotTool
+from .embedding_tool import EmbeddingTool
+
+# This allows other parts of the application to import tool classes directly from the tools package
+__all__ = ["GoogleDriveTool", "DiscordBotTool", "EmbeddingTool"]
+
+2024-05-17 16:27:32,140 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tools/solana_tool.py
+
+
+2024-05-17 16:27:32,141 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tools/discord_botv2.py
+# iChain/src/iChain/tools/discord_bot_v2.py
+
+import discord
+from discord.ext import commands
+import os
+import logging
+
+# Setup logging configuration
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+
+class DiscordBotTool:
+    def __init__(self, token):
+        """
+        Initializes the Discord bot with necessary intents and configurations.
+        """
+        intents = discord.Intents.default()
+        intents.messages = True
+        intents.message_content = True
+        self.bot = commands.Bot(command_prefix="!", intents=intents)
+        self.token = token
+
+        # Register event handlers and commands
+        self.bot.event(self.on_ready)
+        self.bot.command(
+            name="info", help="Provides information based on the user's query"
+        )(self.info)
+
+    async def on_ready(self):
+        """
+        Event handler for when the bot logs in successfully.
+        """
+        logger.info(f"Logged in as {self.bot.user}!")
+
+    async def info(self, ctx, *, query: str):
+        """
+        A slash command to process queries using CrewAI's system, returning insights directly.
+        """
+        # Example interaction, replace with actual CrewAI integration
+        response = f"Received your query: {query}"
+        await ctx.send(response)
+
+    def run(self):
+        """
+        Runs the Discord bot.
+        """
+        self.bot.run(self.token)
+
+2024-05-17 16:27:32,144 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tools/discord_bot.py
+# iChain/src/iChain/tools/discord_bot.py
+
+import discord
+from discord.ext import commands
+import os
+import logging
+
+# Setup logging configuration
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'discord_bot_log.txt'), level=logging.INFO)
+
+logger = logging.getLogger(__name__)
+
+class DiscordBotTool:
+    def __init__(self, token):
+        """
+        Initializes the Discord bot with necessary intents and configurations.
+        """
+        intents = discord.Intents.default()
+        intents.messages = True
+        intents.message_content = True
+        self.bot = commands.Bot(command_prefix="!", intents=intents)
+        self.token = token
+
+        # Register event handlers and commands
+        self.bot.event(self.on_ready)
+        self.bot.command(name="info", help="Provides information based on the user's query")(self.info)
+
+    async def on_ready(self):
+        """
+        Event handler for when the bot logs in successfully.
+        """
+        logger.info(f"[DiscordBotTool] Logged in as {self.bot.user}!")
+
+    async def info(self, ctx, *, query: str):
+        """
+        A command to process queries using CrewAI's system, returning insights directly.
+        """
+        try:
+            response = f"Received your query: {query}"  # Example interaction, replace with actual CrewAI integration
+            await ctx.send(response)
+            logger.info(f"[DiscordBotTool] Processed query: {query}")
+        except Exception as e:
+            logger.error(f"[DiscordBotTool] Error processing query: {e}")
+            await ctx.send("Error processing your query.")
+
+    def run(self):
+        """
+        Runs the Discord bot.
+        """
+        try:
+            self.bot.run(self.token)
+        except Exception as e:
+            logger.error(f"[DiscordBotTool] Error running bot: {e}")
+
+2024-05-17 16:27:32,144 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tools/google_drive.py
+# iChain/src/iChain/tools/google_drive.py
+
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload
+import os
+import logging
+
+# Setup logging configuration
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(
+    filename=os.path.join(log_directory, 'google_drive_tool_log.txt'),
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
+
+class GoogleDriveTool:
+    """
+    This tool handles interactions with Google Drive, such as uploading files,
+    creating folders, and managing permissions.
+    """
+
+    def __init__(self, token_file):
+        """
+        Initializes the Google Drive Tool with credentials to authenticate Google Drive API requests.
+
+        Args:
+            token_file (str): Path to the file containing OAuth 2.0 credentials.
+        """
+        self.service = self.authenticate_google_drive(token_file)
+        logger.info("Google Drive Tool initialized with token file.")
+
+    def authenticate_google_drive(self, token_file):
+        """
+        Authenticates and returns a Google Drive service object to interact with the API.
+
+        Args:
+            token_file (str): Path to the token file.
+
+        Returns:
+            Resource: The authenticated Google Drive service object.
+        """
+        creds = None
+        try:
+            if os.path.exists(token_file):
+                creds = Credentials.from_authorized_user_file(
+                    token_file, scopes=["https://www.googleapis.com/auth/drive"]
+                )
+                logger.info("Google Drive credentials loaded successfully.")
+            else:
+                raise FileNotFoundError("Token file not found. Please check your token path and try again.")
+        except Exception as e:
+            logger.error(f"Failed to authenticate Google Drive: {e}")
+            raise e
+
+        # Build the service from the credentials
+        try:
+            service = build("drive", "v3", credentials=creds)
+            logger.info("Google Drive service built successfully.")
+            return service
+        except Exception as e:
+            logger.error(f"Failed to build Google Drive service: {e}")
+            raise e
+
+    def upload_file(self, file_path, folder_id=None):
+        """
+        Uploads a file to Google Drive.
+
+        Args:
+            file_path (str): The path to the file to upload.
+            folder_id (str, optional): The ID of the folder where the file will be uploaded (None if root). Defaults to None.
+
+        Returns:
+            str: The ID of the uploaded file.
+        """
+        try:
+            file_metadata = {
+                "name": os.path.basename(file_path),
+                "parents": [folder_id] if folder_id else [],
+            }
+            media = MediaFileUpload(file_path, mimetype="text/plain")
+            file = (
+                self.service.files()
+                .create(body=file_metadata, media_body=media, fields="id")
+                .execute()
+            )
+            file_id = file.get("id")
+            logger.info(f"File '{file_path}' uploaded successfully with ID: {file_id}")
+            return file_id
+        except Exception as e:
+            logger.error(f"Failed to upload file '{file_path}': {e}")
+            return None
+
+2024-05-17 16:27:32,144 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tasks/image_processing.py
+# iChain/src/iChain/tasks/image_processing.py
+
+from crewai import Task
+import cv2
+import pytesseract
+import os
+import datetime
+from src.iChain.config.llm_config import get_models
+import logging
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'image_processing_log.txt'), level=logging.INFO)
+
+class ImageProcessingTask(Task):
+    """
+    This task handles the processing of images, utilizing computer vision techniques
+    to extract information such as text and other relevant data from images provided by users.
+    """
+
+    def __init__(self, vision_agent):
+        """
+        Initializes the Image Processing Task with references to necessary tools and agents.
+
+        Args:
+            vision_agent (object): The agent responsible for performing image processing tasks.
+        """
+        super().__init__()
+        self.vision_agent = vision_agent
+
+    def run(self, image_path):
+        """
+        Executes the image processing task by applying OCR to extract text from the image.
+
+        Args:
+            image_path (str): The path to the image file to be processed.
+
+        Returns:
+            str: The text extracted from the image.
+        """
+        if not image_path:
+            raise ValueError("No image path provided for processing.")
+        
+        logging.info(f"[ImageProcessingTask] Processing image: {image_path}")
+
+        try:
+            # Use the vision agent to process the image and extract text
+            extracted_text = self.vision_agent.process_image(image_path)
+            logging.info(f"[ImageProcessingTask] Extracted text: {extracted_text}")
+            return extracted_text
+        except Exception as e:
+            logging.error(f"[ImageProcessingTask] Error processing image: {e}")
+            return "Error processing image."
+
+2024-05-17 16:27:32,144 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tasks/__init__.py
+# iChain/src/iChain/tasks/__init__.py
+
+from .conversation import ConversationTask
+from .anonymization import AnonymizationTask
+from .data_upload import DataUploadTask
+from .image_processing import ImageProcessingTask
+
+# This allows other parts of the application to import task classes directly from the tasks package
+__all__ = [
+    "ConversationTask",
+    "AnonymizationTask",
+    "DataUploadTask",
+    "ImageProcessingTask",
+]
+
+2024-05-17 16:27:32,145 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tasks/conversation.py
+# iChain/src/iChain/tasks/conversation.py
+
+import logging
+import os
+import datetime
+from crewai import Task
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'conversation_task_log.txt'), level=logging.INFO)
+
+class ConversationTask(Task):
+    """
+    This task manages interactions with the user, processing input and generating responses
+    through the personal assistant agent.
+    """
+
+    def __init__(self, assistant_agent):
+        """
+        Initializes the Conversation Task with a reference to the personal assistant agent.
+
+        Args:
+            assistant_agent (object): The agent responsible for managing user interactions.
+        """
+        super().__init__()
+        self.assistant_agent = assistant_agent
+        logging.info(f"[{datetime.datetime.now()}] [Task: ConversationTask] Initialized with assistant_agent: {assistant_agent}")
+
+    def run(self, input_data):
+        """
+        Executes the conversation task by processing the input data through the assistant agent.
+
+        Args:
+            input_data (str): The user input to process.
+
+        Returns:
+            str: The response generated by the assistant agent.
+        """
+        if not input_data:
+            logging.error(f"[{datetime.datetime.now()}] [Task: ConversationTask] No input data provided for conversation.")
+            raise ValueError("No input data provided for conversation.")
+
+        # Use the assistant agent to handle the conversation and generate a response
+        response = self.assistant_agent.receive_message(input_data)
+        logging.info(f"[{datetime.datetime.now()}] [Task: ConversationTask] User input: {input_data} Assistant response: {response}")
+        return response
+
+2024-05-17 16:27:32,145 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tasks/data_upload.py
+# iChain/src/iChain/tasks/data_upload.py
+
+import logging
+import os
+import datetime
+from crewai import Task
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'data_upload_task_log.txt'), level=logging.INFO)
+
+class DataUploadTask(Task):
+    """
+    This task handles uploading anonymized and processed data to a secure storage solution.
+    It ensures that data is safely stored and retrievable for future use.
+    """
+
+    def __init__(self, storage_tool, data_valuator):
+        """
+        Initializes the Data Upload Task with references to necessary tools and agents.
+
+        Args:
+            storage_tool (object): Tool used to interact with the data storage solution (e.g., Google Drive API).
+            data_valuator (object): The agent responsible for assessing data before uploading.
+        """
+        super().__init__()
+        self.storage_tool = storage_tool
+        self.data_valuator = data_valuator
+        logging.info(f"[{datetime.datetime.now()}] [Task: DataUploadTask] Initialized with storage_tool: {storage_tool}, data_valuator: {data_valuator}")
+
+    def run(self, data):
+        """
+        Executes the task of uploading data after assessing its quality and value.
+
+        Args:
+            data (dict): Containing 'data' to be uploaded and 'metadata' such as source, type, etc.
+
+        Returns:
+            str: Status message indicating success or failure of the upload.
+        """
+        if not data or "data" not in data:
+            logging.error(f"[{datetime.datetime.now()}] [Task: DataUploadTask] Invalid data provided for upload.")
+            raise ValueError("Invalid data provided for upload.")
+
+        # Assess the data's value before uploading
+        value, assessment = self.data_valuator.assess_data(data["data"])
+        logging.info(f"[{datetime.datetime.now()}] [Task: DataUploadTask] Data assessment: {assessment}, Value: {value}")
+        
+        if value < 50:  # Assume a threshold value below which data is not worth uploading
+            logging.warning(f"[{datetime.datetime.now()}] [Task: DataUploadTask] Data not uploaded due to low value.")
+            return "Data not uploaded due to low value."
+
+        # Upload the data using the storage tool
+        upload_status = self.storage_tool.upload(data["data"], data.get("metadata", {}))
+        logging.info(f"[{datetime.datetime.now()}] [Task: DataUploadTask] Data uploaded successfully: {upload_status}")
+        return f"Data uploaded successfully on {datetime.datetime.now()}: {upload_status}"
+
+2024-05-17 16:27:32,145 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/tasks/anonymization.py
+# iChain/src/iChain/tasks/anonymization.py
+
+import logging
+import os
+import datetime
+from crewai import Task
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'anonymization_task_log.txt'), level=logging.INFO)
+
+class AnonymizationTask(Task):
+    """
+    This task handles the anonymization of sensitive information within data collected during interactions.
+    It ensures that personal identifiers and other sensitive data are redacted to protect user privacy.
+    """
+
+    def __init__(self, data_cleaning_agent):
+        """
+        Initializes the Anonymization Task with a reference to a data cleaning agent.
+
+        Args:
+            data_cleaning_agent (object): The agent responsible for performing the data cleaning and anonymization.
+        """
+        super().__init__()
+        self.data_cleaning_agent = data_cleaning_agent
+        logging.info(f"[{datetime.datetime.now()}] [Task: AnonymizationTask] Initialized with data_cleaning_agent: {data_cleaning_agent}")
+
+    def run(self, data):
+        """
+        Executes the anonymization process on the provided data.
+
+        Args:
+            data (str): The text data to be anonymized.
+
+        Returns:
+            str: The anonymized version of the input data.
+        """
+        if not data:
+            logging.error(f"[{datetime.datetime.now()}] [Task: AnonymizationTask] No data provided for anonymization.")
+            raise ValueError("No data provided for anonymization.")
+
+        # Use the data cleaning agent to anonymize the data
+        anonymized_data = self.data_cleaning_agent.anonymize_data(data)
+        logging.info(f"[{datetime.datetime.now()}] [Task: AnonymizationTask] Anonymized data: {anonymized_data}")
+        return anonymized_data
+
+2024-05-17 16:27:32,145 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/config/__init__.py
+# iChain/src/iChain/config/__init__.py
+
+from .settings import *
+from .llm_config import *
+
+2024-05-17 16:27:32,145 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/config/llm_config.py
+# iChain/src/iChain/config/llm_config.py
+
+# Import necessary libraries
+import torch
+import torchvision
+import torchvision.transforms as transforms
+from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline, AutoModelForTokenClassification, AutoModelForQuestionAnswering
+from transformers.optimization import AdamW
+from langchain.llms import Ollama, LLAVA
+from langchain_groq import ChatGroq
+from sentence_transformers import SentenceTransformer
+from efficientnet_pytorch import EfficientNet
+from PIL import Image
+import cv2
+from gtts import gTTS
+from pydub import AudioSegment
+from speech_recognition import Recognizer, Microphone
+import keras
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA, LatentDirichletAllocation, NonNegativeMatrixFactorization, TruncatedSVD
+from sklearn.manifold import TSNE
+from kneed import KneeLocator
+from pyclustering.cluster.kmeans import kmeans
+from pyclustering.cluster.center_initializer import kmeans_plusplus_initializer
+from transformers import WhisperForConditionalGeneration, WhisperTokenizer, EncoderDecoderModel, MarianMTModel, MarianTokenizer, M2M100ForConditionalGeneration, M2M100Tokenizer
+from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances, manhattan_distances, haversine_distances
+from sklearn.cluster import KMeans, DBSCAN, Birch, OPTICS
+from sklearn.mixture import BayesianGaussianMixture, GaussianMixture
+from openai import ImageGenerator
+from pytorch_lightning import LightningModule
+from pytorch_lightning.callbacks import EarlyStopping
+from pytorch_lightning.loggers import TensorBoardLogger
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.image import extract_patches_2d
+from PIL import ImageFilter
+from huggingface_hub import HfApi
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+from scipy import signal
+from scipy.io import wavfile
+from transformers import VisionTextDualEncoder
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from pytorch_lightning import LightningModule
+
+
+# Add more AI models
+models = {
+    # Language Models
+    "llama3-8b-8192": {"groq": True, "ollama": True},
+    "llama3-70b-8192": {"groq": True, "ollama": True},
+    "gemma-7b-it": {"groq": True, "ollama": True},
+    "mixtral-8x7b-32768": {"groq": True, "ollama": True},
+    "bert-base-uncased": {"transformers": True},
+    "roberta-base": {"transformers": True},
+    "distilbert-base-uncased": {"transformers": True},
+    "xlm-roberta-base": {"transformers": True},
+    # Embedding models
+    "llama-base": {"ollama": True},
+    "llama-large": {"ollama": True},
+    "llama-extra-large": {"ollama": True},
+    "all-MiniLM-L6-v2": {"sentence_transformers": True},
+    # Vision Models
+    "llava": {"ollama": True},
+    "resnet50": {"torchvision": True},
+    "efficientnet-b0": {"efficientnet": True},
+    "detr-resnet-50": {"torchvision": True},
+    "stabilized-image": {"openai": True},
+    # Text-to-Speech
+    "gtts": {"gtts": True},
+    # Speech-to-Text
+    "sphinx": {"sphinx": True},
+    # Transformers
+    "whisper-base": {"transformers": True},
+    "encoder-decoder": {"transformers": True},
+    "marian-mt": {"transformers": True},
+    "m2m100": {"transformers": True},
+    # Additional models
+    "random_forest": {"sklearn": True},
+    "svm": {"sklearn": True},
+    "kmeans": {"pyclustering": True},
+    "tsne": {"sklearn": True},
+    "pca": {"sklearn": True},
+    "knee_locator": {"kneed": True},
+    "question_answering": {"transformers": True},
+    "token_classification": {"transformers": True},
+    "gmm": {"sklearn": True},
+    "covariance": {"sklearn": True},
+    "longformer-base-uncased": {"transformers": True},
+    "prophetnet-large": {"transformers": True},
+    "bert-generation-base": {"transformers": True},
+    "self-training": {"sklearn": True},
+    "catboost-classifier": {"catboost": True},
+    "xgb-classifier": {"xgboost": True},
+    "lgbm-classifier": {"lightgbm": True},
+    "catboost-regressor": {"catboost": True},
+    "xgb-regressor": {"xgboost": True},
+    "lgbm-regressor": {"lightgbm": True},
+    "voting-classifier": {"sklearn": True},
+    "stacking-classifier": {"sklearn": True},
+    "hist-gradient-boosting-classifier": {"sklearn": True},
+    "hist-gradient-boosting-regressor": {"sklearn": True},
+    "ray-tune": {"ray": True},
+    "dbscan": {"sklearn": True},
+    "birch": {"sklearn": True},
+    "optics": {"sklearn": True},
+    "bayesian-gaussian-mixture": {"sklearn": True},
+    "gaussian-mixture": {"sklearn": True},
+    "latent-dirichlet-allocation": {"sklearn": True},
+    "non-negative-matrix-factorization": {"sklearn": True},
+    "truncated-svd": {"sklearn": True},
+}
+
+# Define providers
+groq_provider = {"api_key": "gsk_ba Trimmed GJX"}
+ollama_provider = {}
+gtts_provider = {}
+sphinx_provider = {}
+sklearn_provider = {}
+pyclustering_provider = {}
+kneed_provider = {}
+huggingface_provider = {}
+openai_provider = {}
+ray_provider = {}
+transformers_provider = {}
+catboost_provider = {}
+xgboost_provider = {}
+lightgbm_provider = {}
+
+def get_models(provider, model_name):
+    """
+    Retrieves and initializes an AI model based on the specified provider and model name.
+
+    Args:
+        provider (str): The provider for the model (e.g., "groq", "ollama", "transformers").
+        model_name (str): The specific name of the AI model.
+
+    Returns:
+        object: An initialized AI model instance.
+
+    Raises:
+        ValueError: If the provider or model name is invalid.
+    """
+    if provider == "groq":
+        return ChatGroq(
+            temperature=0.9,
+            groq_api_key=groq_provider["api_key"],
+            model_name=model_name,
+        )
+    elif provider == "ollama":
+        return Ollama(temperature=0.8, model=model_name)
+    elif provider == "transformers":
+        if model_name in [
+            "distilbert-base-uncased",
+            "bert-base-uncased",
+            "roberta-base",
+            "xlm-roberta-base",
+            "whisper-base",
+            "encoder-decoder",
+            "marian-mt",
+            "m2m100",
+            "longformer-base-uncased",
+            "prophetnet-large",
+            "bert-generation-base",
+        ]:
+            return AutoModelForSequenceClassification.from_pretrained(model_name)
+        elif model_name == "question_answering":
+            return AutoModelForQuestionAnswering.from_pretrained(model_name)
+        elif model_name == "token_classification":
+            return AutoModelForTokenClassification.from_pretrained(model_name)
+    elif provider == "llava":
+        return LLAVA(model_name)
+    elif provider == "torchvision":
+        return models.__dict__[model_name](pretrained=True)
+    elif provider == "efficientnet":
+        return EfficientNet.from_pretrained(model_name)
+    elif provider == "gtts":
+        return gTTS(text="", lang="en", slow=False)
+    elif provider == "sphinx":
+        return Recognizer()
+    elif provider == "sentence_transformers":
+        return SentenceTransformer(model_name)
+    elif provider == "sklearn":
+        if model_name == "random_forest":
+            return RandomForestClassifier()
+        elif model_name == "svm":
+            return SVC()
+        elif model_name == "tsne":
+            return TSNE()
+        elif model_name == "pca":
+            return PCA()
+        elif model_name == "gmm":
+            return GaussianMixture()
+        elif model_name == "kmeans":
+            return KMeans()
+        elif model_name == "dbscan":
+            return DBSCAN()
+        elif model_name == "birch":
+            return Birch()
+        elif model_name == "optics":
+            return OPTICS()
+        elif model_name == "bayesian-gaussian-mixture":
+            return BayesianGaussianMixture()
+        elif model_name == "gaussian-mixture":
+            return GaussianMixture()
+        elif model_name == "latent-dirichlet-allocation":
+            return LatentDirichletAllocation()
+        elif model_name == "non-negative-matrix-factorization":
+            return NonNegativeMatrixFactorization()
+        elif model_name == "truncated-svd":
+            return TruncatedSVD()
+    elif provider == "pyclustering":
+        if model_name == "kmeans":
+            return kmeans()
+    elif provider == "kneed":
+        return KneeLocator()
+    elif provider == "huggingface":
+        api = HfApi()
+        return api.model_info(model_name)
+    elif provider == "openai":
+        if model_name == "stabilized-image":
+            return ImageGenerator()
+    else:
+        raise ValueError(f"Invalid provider: {provider}")
+
+
+# Add more functions to interact with the models
+def train_model(model, X, y):
+    """
+    Trains a model using the provided data.
+
+    Args:
+        model (object): The AI model to train.
+        X (array-like): The training features.
+        y (array-like): The training labels.
+    """
+    # Train the model using the provided data
+    pass
+
+def evaluate_model(model, X, y):
+    """
+    Evaluates a model using the provided data.
+
+    Args:
+        model (object): The AI model to evaluate.
+        X (array-like): The evaluation features.
+        y (array-like): The evaluation labels.
+    """
+    # Evaluate the model using the provided data
+    pass
+
+def predict(model, X):
+    """
+    Makes predictions using a model.
+
+    Args:
+        model (object): The AI model to use for prediction.
+        X (array-like): The input features for prediction.
+
+    Returns:
+        array-like: The model's predictions.
+    """
+    # Make predictions using the model
+    pass
+
+def visualize(model, X):
+    """
+    Visualizes the model's output or internal states.
+
+    Args:
+        model (object): The AI model to visualize.
+        X (array-like): The data to use for visualization.
+    """
+    # Visualize the model's output or internal states
+    pass
+
+###################################################
+# Example usage in the agent block				  
+# llm = get_models("groq", "llama3-8b-8192")  # Get a Groq-based LLM model
+#
+# Use the LLM model for text generation
+# text_input = "What is the meaning of life?"
+# response = llm.generate_text(text_input)
+# print(response)
+#
+# Evaluate the response using a sentiment analysis model
+# sentiment_model = get_models("sklearn", "svm")
+# sentiment_prediction = sentiment_model.predict(response)
+# print(f"Sentiment: {sentiment_prediction}")
+#
+# Visualize the response using a TSNE model
+# tsne_model = get_models("sklearn", "tsne")
+# embedded_response = tsne_model.fit_transform(response)
+# print(embedded_response)
+#
+# Use a random forest model for classification
+# rf_model = get_models("sklearn", "random_forest")
+# classification = rf_model.predict(response)
+# print(f"Classification: {classification}")
+#
+# Use a K-Means model for clustering
+# kmeans_model = get_models("pyclustering", "kmeans")
+# clusters = kmeans_model.cluster(response)
+# print(f"Clusters: {clusters}")
+###################################################
+# Example usage in the agent block				  
+
+"""# Example 1: Using a Groq-based LLM model for text generation
+llm = get_models("groq", "llama3-8b-8192")  # Get a Groq-based LLM model
+text_input = "What is the meaning of life?"
+response = llm.generate_text(text_input)
+print(f"LLM Response: {response}")
+
+# Example 2: Sentiment Analysis using a scikit-learn SVM model
+sentiment_model = get_models("sklearn", "svm")
+# Assuming 'response' is the text we got from the LLM
+sentiment_input = [response]
+# Transform the text input to feature vectors if required (e.g., using TF-IDF)
+# tfidf_vectorizer = TfidfVectorizer()
+# sentiment_input_transformed = tfidf_vectorizer.fit_transform(sentiment_input)
+# For simplicity, we'll assume sentiment_input is already transformed
+sentiment_prediction = sentiment_model.predict(sentiment_input)
+print(f"Sentiment Prediction: {sentiment_prediction}")
+
+# Example 3: Visualizing text embeddings using a TSNE model
+tsne_model = get_models("sklearn", "tsne")
+# Assuming 'response' is the text we want to visualize
+# Convert the text to embeddings using a model (e.g., a sentence transformer)
+embedding_model = get_models("sentence_transformers", "all-MiniLM-L6-v2")
+embeddings = embedding_model.encode(sentiment_input)
+embedded_response = tsne_model.fit_transform(embeddings)
+print(f"TSNE Embedded Response: {embedded_response}")
+
+# Example 4: Classification using a Random Forest model
+rf_model = get_models("sklearn", "random_forest")
+# Assuming we have features X and labels y for training
+# X = ...  # feature vectors
+# y = ...  # labels
+# For demonstration, we'll use a simple example
+X_train = [[0, 0], [1, 1]]
+y_train = [0, 1]
+rf_model.fit(X_train, y_train)  # Train the model
+# Now predict using the trained model
+X_test = [[0.5, 0.5]]
+classification = rf_model.predict(X_test)
+print(f"Random Forest Classification: {classification}")
+
+# Example 5: Clustering using a K-Means model
+kmeans_model = get_models("sklearn", "kmeans")
+# Assuming we have some data to cluster
+# X = ...  # feature vectors
+# For demonstration, we'll use a simple example
+X_cluster = [[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]]
+kmeans_model.fit(X_cluster)  # Fit the model
+clusters = kmeans_model.predict(X_cluster)
+print(f"K-Means Clusters: {clusters}")
+
+# Example 6: Image classification using a Vision model
+vision_model = get_models("torchvision", "resnet50")
+# Load and preprocess an image
+image_path = "path_to_image.jpg"
+image = Image.open(image_path)
+preprocess = transforms.Compose([
+    transforms.Resize(256),
+    transforms.CenterCrop(224),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+image_tensor = preprocess(image).unsqueeze(0)  # Add batch dimension
+# Perform image classification
+vision_model.eval()
+with torch.no_grad():
+    output = vision_model(image_tensor)
+# Assuming the output is logits, apply softmax to get probabilities
+probabilities = torch.nn.functional.softmax(output[0], dim=0)
+print(f"Image Classification Probabilities: {probabilities}")
+
+# Example 7: Text-to-Speech using gTTS
+text_to_speech_model = get_models("gtts", "gtts")
+text = "Hello, this is a text-to-speech example."
+speech = text_to_speech_model(text)
+speech.save("output_speech.mp3")
+print("Text-to-Speech saved to 'output_speech.mp3'")
+
+# Example 8: Speech-to-Text using Sphinx
+speech_to_text_model = get_models("sphinx", "sphinx")
+recognizer = speech_to_text_model
+# Assuming we have an audio file 'audio.wav'
+audio_file = "audio.wav"
+with Microphone() as source:
+    audio_data = recognizer.record(source)
+    text_output = recognizer.recognize_sphinx(audio_data)
+    print(f"Speech-to-Text Output: {text_output}")
+
+# Example 9: Visualizing data clusters using a K-Means model and PCA for dimensionality reduction
+kmeans_model = get_models("sklearn", "kmeans")
+pca_model = get_models("sklearn", "pca")
+# Assuming we have some data to cluster
+X_data = [[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]]
+kmeans_model.fit(X_data)  # Fit the K-Means model
+clusters = kmeans_model.predict(X_data)
+# Reduce dimensionality for visualization
+X_reduced = pca_model.fit_transform(X_data)
+plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=clusters)
+plt.title("K-Means Clusters")
+plt.show()
+
+# Example 10: Using a Gaussian Mixture Model for clustering
+gmm_model = get_models("sklearn", "gmm")
+# Assuming we have some data to cluster
+X_data_gmm = [[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]]
+gmm_model.fit(X_data_gmm)  # Fit the GMM model
+gmm_clusters = gmm_model.predict(X_data_gmm)
+print(f"Gaussian Mixture Model Clusters: {gmm_clusters}")
+###################################################"""
+
+2024-05-17 16:27:32,147 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/config/settings.py
+# iChain/src/iChain/config/settings.py
+
+import os
+
+# API keys and endpoints for AI model providers and other services
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN", "MTIzNTc0NzM0Mjk0Mjk5ODYxOA.GbPdwh.vhsvUFJWW1Ca-HcEbM24Dl2lPX6vw1ZIG-_aqw")
+GOOGLE_DRIVE_API_KEY = os.getenv("GOOGLE_DRIVE_API_KEY")
+GROQ_API_ENDPOINT = os.getenv("GROQ_API_ENDPOINT", "https://api.groq.com/openai/v1")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "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")
+PYTESSERACT_CONFIG = os.getenv("PYTESSERACT_CONFIG")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY")
+AZURE_AI_KEY = os.getenv("AZURE_AI_KEY")
+IBM_WATSON_API_KEY = os.getenv("IBM_WATSON_API_KEY")
+AMAZON_AI_API_KEY = os.getenv("AMAZON_AI_API_KEY")
+
+# Database and logging settings
+DATABASE_URI = os.getenv("DATABASE_URI")
+LOGGING_LEVEL = os.getenv("LOGGING_LEVEL", "DEBUG")
+
+# Ensure to set default values where applicable, or handle cases where they might not be set
+if not DISCORD_BOT_TOKEN or not GROQ_API_KEY:
+    raise ValueError("Critical API keys are missing. Check your environment variables.")
+
+2024-05-17 16:27:32,147 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/models/__init__.py
+# iChain/src/iChain/models/__init__.py
+
+from .data_models import *
+
+# Optionally, you can define a list of all models for easy iteration if needed elsewhere in your application
+__all__ = [
+    "UserDataModel",
+    "InteractionDataModel",
+    "ImageDataModel",
+]
+
+2024-05-17 16:27:32,147 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/models/data_models.py
+# iChain/src/iChain/models/data_models.py
+
+import logging
+import os
+import datetime
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'data_models_log.txt'), level=logging.INFO)
+
+class UserDataModel:
+    """
+    Data model for storing user-specific information.
+    """
+
+    def __init__(self, user_id, name, email):
+        """
+        Initialize the UserDataModel with user-specific details.
+
+        Args:
+            user_id (str): Unique identifier for the user.
+            name (str): Name of the user.
+            email (str): Email address of the user.
+        """
+        self.user_id = user_id
+        self.name = name
+        self.email = email
+        logging.info(f"[Model: UserDataModel] [Task: __init__] User initialized: {self}")
+
+    def __repr__(self):
+        return f"<UserDataModel(user_id={self.user_id}, name={self.name}, email={self.email})>"
+
+
+class InteractionDataModel:
+    """
+    Data model for storing details about interactions with users.
+    """
+
+    def __init__(self, interaction_id, user_id, interaction_type, details):
+        """
+        Initialize the InteractionDataModel with interaction details.
+
+        Args:
+            interaction_id (str): Unique identifier for the interaction.
+            user_id (str): Unique identifier for the user.
+            interaction_type (str): Type of the interaction.
+            details (str): Details about the interaction.
+        """
+        self.interaction_id = interaction_id
+        self.user_id = user_id
+        self.interaction_type = interaction_type
+        self.details = details
+        logging.info(f"[Model: InteractionDataModel] [Task: __init__] Interaction initialized: {self}")
+
+    def __repr__(self):
+        return (
+            f"<InteractionDataModel(interaction_id={self.interaction_id}, user_id={self.user_id}, "
+            f"interaction_type={self.interaction_type}, details={self.details})>"
+        )
+
+
+class ImageDataModel:
+    """
+    Data model for storing information about processed images.
+    """
+
+    def __init__(self, image_id, user_id, file_path, extracted_text):
+        """
+        Initialize the ImageDataModel with image processing details.
+
+        Args:
+            image_id (str): Unique identifier for the image.
+            user_id (str): Unique identifier for the user.
+            file_path (str): File path of the processed image.
+            extracted_text (str): Text extracted from the image.
+        """
+        self.image_id = image_id
+        self.user_id = user_id
+        self.file_path = file_path
+        self.extracted_text = extracted_text
+        logging.info(f"[Model: ImageDataModel] [Task: __init__] Image initialized: {self}")
+
+    def __repr__(self):
+        return (
+            f"<ImageDataModel(image_id={self.image_id}, user_id={self.user_id}, "
+            f"file_path={self.file_path}, extracted_text={self.extracted_text})>"
+        )
+
+2024-05-17 16:27:32,147 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/memory/__init__.py
+# iChain/src/iChain/memory/__init__.py
+
+from .long_term import LongTermMemory
+from .short_term import ShortTermMemory
+
+# This allows other parts of the application to import memory classes directly from the memory package
+__all__ = ["LongTermMemory", "ShortTermMemory"]
+
+2024-05-17 16:27:32,148 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/memory/embedding.py
+
+
+2024-05-17 16:27:32,148 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/memory/short_term.py
+# iChain/src/iChain/memory/short_term.py
+
+import logging
+import os
+import datetime
+from collections import deque
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'short_term_memory_log.txt'), level=logging.INFO)
+
+class ShortTermMemory:
+    """
+    This class provides functionality for storing and retrieving short-term memory,
+    which is used to maintain context during a user's interaction session.
+    """
+
+    def __init__(self, max_size=10):
+        """
+        Initialize the ShortTermMemory with a deque to hold the memory items, limited to max_size.
+
+        Args:
+            max_size (int): The maximum number of memory items to store.
+        """
+        self.memory_store = deque(maxlen=max_size)
+        self.max_size = max_size
+
+    def store_memory(self, key, value):
+        """
+        Stores a piece of memory in the short-term store.
+
+        Args:
+            key (str): The key under which the memory should be stored.
+            value (any): The data to store.
+        """
+        try:
+            self.memory_store.append((key, value))
+            logging.info(f"[Memory: ShortTerm] [Task: store_memory] Key: {key} Value: {value} Stored at: {datetime.datetime.now()}")
+        except Exception as e:
+            logging.error(f"[Memory: ShortTerm] [Task: store_memory] Error storing memory: {e}")
+
+    def retrieve_memory(self, key):
+        """
+        Retrieves a piece of memory from the short-term store.
+
+        Args:
+            key (str): The key for the memory to retrieve.
+
+        Returns:
+            any: The retrieved data if available, else None.
+        """
+        try:
+            for k, v in self.memory_store:
+                if k == key:
+                    logging.info(f"[Memory: ShortTerm] [Task: retrieve_memory] Key: {key} Retrieved at: {datetime.datetime.now()}")
+                    return v
+            logging.info(f"[Memory: ShortTerm] [Task: retrieve_memory] Key: {key} Not found at: {datetime.datetime.now()}")
+            return None
+        except Exception as e:
+            logging.error(f"[Memory: ShortTerm] [Task: retrieve_memory] Error retrieving memory: {e}")
+            return None
+
+    def clear_memory(self):
+        """
+        Clears all stored memory, typically used at the end of a session or when memory needs refreshing.
+        """
+        try:
+            self.memory_store.clear()
+            logging.info(f"[Memory: ShortTerm] [Task: clear_memory] Memory cleared at: {datetime.datetime.now()}")
+        except Exception as e:
+            logging.error(f"[Memory: ShortTerm] [Task: clear_memory] Error clearing memory: {e}")
+
+2024-05-17 16:27:32,149 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/memory/long_term.py
+# iChain/src/iChain/memory/long_term.py
+
+import os
+import logging
+import datetime
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'long_term_memory_log.txt'), level=logging.INFO)
+
+class LongTermMemory:
+    """
+    This class provides functionality for storing and retrieving long-term memory,
+    which can include user preferences, historical interaction data, and other information
+    that should be persisted across sessions.
+    """
+
+    def __init__(self, storage_path):
+        """
+        Initialize the LongTermMemory with a path to the storage file or database.
+
+        Args:
+            storage_path (str): The path to the file or database where long-term memories are stored.
+        """
+        self.storage_path = storage_path
+
+    def save_memory(self, key, value):
+        """
+        Saves a piece of memory.
+
+        Args:
+            key (str): The key under which the memory should be stored.
+            value (any): The data to store.
+        """
+        try:
+            # Example: Save to a simple file or extend to use a database
+            with open(self.storage_path, "a") as file:
+                file.write(f"{key}:{value}\n")
+            logging.info(f"[Memory: LongTerm] [Task: save_memory] Key: {key} Value: {value} Saved at: {datetime.datetime.now()}")
+        except Exception as e:
+            logging.error(f"[Memory: LongTerm] [Task: save_memory] Error saving memory: {e}")
+
+    def retrieve_memory(self, key):
+        """
+        Retrieves a piece of memory.
+
+        Args:
+            key (str): The key for the memory to retrieve.
+
+        Returns:
+            any: The retrieved data, or None if the key is not found.
+        """
+        try:
+            # Example: Read from a simple file or extend to use a database
+            with open(self.storage_path, "r") as file:
+                for line in file:
+                    k, v = line.strip().split(":")
+                    if k == key:
+                        logging.info(f"[Memory: LongTerm] [Task: retrieve_memory] Key: {key} Retrieved at: {datetime.datetime.now()}")
+                        return v
+            logging.info(f"[Memory: LongTerm] [Task: retrieve_memory] Key: {key} Not found at: {datetime.datetime.now()}")
+            return None
+        except Exception as e:
+            logging.error(f"[Memory: LongTerm] [Task: retrieve_memory] Error retrieving memory: {e}")
+            return None
+
+2024-05-17 16:27:32,149 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/agents/vision.py
+# iChain/src/iChain/agents/vision.py
+
+from crewai import Agent
+import cv2
+import pytesseract
+import os
+import datetime
+from src.iChain.config.llm_config import get_models
+import logging
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'vision_log.txt'), level=logging.INFO)
+
+class VisionAgent(Agent):
+    """
+    This class defines the Vision Agent responsible for processing images. It uses computer vision
+    techniques to extract text and other relevant information from images provided by users.
+    """
+
+    def __init__(self, memory, llm):
+        """
+        Initializes the Vision Agent with specific roles and goals.
+
+        Args:
+            memory (object): A memory object capable of storing session data (imported from CrewAI).
+            llm (object): The language model the agent will use for generating responses.
+        """
+        super().__init__(role="Vision Specialist", verbose=True, memory=memory, llm=llm)
+
+    def process_image(self, image_path):
+        """
+        Processes an image file to extract text using Optical Character Recognition (OCR).
+
+        Args:
+            image_path (str): The path to the image file to be processed.
+
+        Returns:
+            str: The extracted text from the image.
+        """
+        try:
+            # Load the image using OpenCV
+            img = cv2.imread(image_path)
+            if img is None:
+                raise ValueError(f"Image not found at path: {image_path}")
+
+            # Convert the image to grayscale
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+            # Apply OCR to extract text
+            extracted_text = pytesseract.image_to_string(gray)
+            logging.info(f"[Agent: {self.role}] [Task: process_image] [Tool: pytesseract] Extracted Text: {extracted_text[:50]}...")  # Log with agent tag
+            return extracted_text
+
+        except Exception as e:
+            logging.error(f"[Agent: {self.role}] [Task: process_image] Error processing image: {e}")
+            return "Error processing image"
+
+    def log_image_processing(self, image_path, extracted_text):
+        """
+        Logs the processing of the image and the extracted text for audit and improvements.
+
+        Args:
+            image_path (str): The path to the image processed.
+            extracted_text (str): The text extracted from the image.
+        """
+        try:
+            log_message = (
+                f"[Agent: {self.role}] [Task: log_image_processing] Image processed: {image_path}\n"
+                f"Extracted Text: {extracted_text}\nLogged at: {datetime.datetime.now()}\n---\n"
+            )
+            logging.info(log_message)
+        except Exception as e:
+            logging.error(f"[Agent: {self.role}] [Task: log_image_processing] Error logging image processing: {e}")
+
+2024-05-17 16:27:32,150 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/agents/cleaner.py
+# iChain/src/iChain/agents/cleaner.py
+
+from crewai import Agent
+import re
+import os
+import datetime
+from src.iChain.config.llm_config import get_models
+import logging
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'cleaning_log.txt'), level=logging.INFO)
+
+class DataCleaningAgent(Agent):
+    """
+    This class defines the Data Cleaning Agent that handles the anonymization of sensitive information
+    from data collected during interactions. It uses regular expressions to identify and anonymize
+    personal identifiers and other sensitive data.
+    """
+
+    def __init__(self, memory, llm):
+        """
+        Initializes the Data Cleaning Agent with specific roles and goals.
+
+        Args:
+            memory (object): A memory object capable of storing session data (imported from CrewAI).
+            llm (object): The language model the agent will use for generating responses.
+        """
+        super().__init__(role="Data Cleaner", verbose=True, memory=memory, llm=llm)
+
+    def anonymize_data(self, text):
+        """
+        Anonymizes sensitive information in the given text.
+
+        Args:
+            text (str): The text containing potentially sensitive information.
+
+        Returns:
+            str: The anonymized text.
+        """
+        try:
+            # Regular expressions for detecting sensitive information
+            patterns = {
+                "email": r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b",
+                "phone": r"\b\d{3}[-.]?\d{3}[-.]?\d{4}\b",
+                "ssn": r"\b\d{3}-\d{2}-\d{4}\b",
+            }
+
+            # Anonymizing data
+            for key, pattern in patterns.items():
+                text = re.sub(pattern, "[REDACTED]", text)
+
+            return text
+        except Exception as e:
+            logging.error(f"Error anonymizing data: {e}")
+            return None
+
+    def process_data(self, data):
+        """
+        Processes the data through anonymization and logs the operation.
+
+        Args:
+            data (str): Data to be cleaned.
+
+        Returns:
+            str: Cleaned data.
+        """
+        try:
+            anonymized_data = self.anonymize_data(data)
+            self.log_cleaning(data, anonymized_data)
+            return anonymized_data
+        except Exception as e:
+            logging.error(f"Error processing data: {e}")
+            return None
+
+    def log_cleaning(self, original, anonymized):
+        """
+        Logs the before and after of data cleaning for audit and improvements.
+
+        Args:
+            original (str): The original data before cleaning.
+            anonymized (str): The data after anonymization.
+        """
+        log_message = f"Original: {original}\nAnonymized: {anonymized}\nLogged at: {datetime.datetime.now()}\n---\n"
+        logging.info(log_message)
+
+2024-05-17 16:27:32,150 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/agents/__init__.py
+# iChain/src/agents/__init__.py
+
+# Importing the necessary agent modules so they can be accessible from other parts of the application
+from .assistant import PersonalAssistantAgent
+from .cleaner import DataCleaningAgent
+from .valuator import DataValuationAgent
+from .vision import VisionAgent
+from .manager import ManagerAgent
+
+# Optionally, you can define a list of all agents for easy iteration if needed elsewhere in your application
+__all__ = [
+    "PersonalAssistantAgent",
+    "DataCleaningAgent",
+    "DataValuationAgent",
+    "VisionAgent",
+    "ManagerAgent",
+]
+
+2024-05-17 16:27:32,150 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/agents/assistant.py
+# iChain/src/agents/assistant.py
+
+from crewai import Agent
+import datetime
+import os
+from ..config import LOGGING_LEVEL, setup_logging
+from ..config.llm_config import get_models
+import logging
+
+
+class PersonalAssistantAgent(Agent):
+    """
+    This class defines the Personal Assistant Agent that interacts with users to collect data,
+    manage conversations, and handle various user requests. It incorporates memory and embedding tools
+    to enhance conversation context and data collection.
+    """
+
+    # Configure logging
+    def set_logging_level(self, level):
+        """Sets the logging level for the agent."""
+        try:
+            global LOGGING_LEVEL  # Access the global logging level
+            LOGGING_LEVEL = getattr(logging, level.upper(), LOGGING_LEVEL)
+            setup_logging() # Reconfigure logging with the new level
+            logging.info(f"[{datetime.datetime.now()}] [Agent: PersonalAssistantAgent] Logging level set to: {LOGGING_LEVEL}")
+        except Exception as e:
+            logging.error(f"[{datetime.datetime.now()}] [Agent: PersonalAssistantAgent] Error setting logging level: {e}")
+
+
+    def __init__(self, memory, embedder, llm):
+        """
+        Initializes the Personal Assistant Agent with memory and embedding capabilities.
+
+        Args:
+            memory (object): A memory object capable of storing session data (imported from CrewAI).
+            embedder (object): An embedding tool for processing text input.
+            llm (object): The language model the agent will use for generating responses.
+        """
+        super().__init__(role="Personal Assistant", verbose=True, memory=memory, llm=llm)
+        self.embedder = embedder
+        logging.info(f"[{datetime.datetime.now()}] [Agent: PersonalAssistantAgent] Initialized with memory: {memory}, embedder: {embedder}, llm: {llm}")
+
+    def receive_message(self, message):
+        """
+        Handles incoming messages from users and processes them accordingly.
+
+        Args:
+            message (str): The message received from the user.
+
+        Returns:
+            str: The response generated based on the user's message.
+        """
+        try:
+            # Process the message using the embedding tool
+            embedded_message = self.embedder.embed(message)
+
+            # Generate a response
+            response = self.process_message(embedded_message)
+            logging.info(f"[{datetime.datetime.now()}] [Agent: PersonalAssistantAgent] Received message: {message}, Generated response: {response}")
+            return response
+        except Exception as e:
+            logging.error(f"[{datetime.datetime.now()}] [Agent: PersonalAssistantAgent] Error receiving message: {e}")
+            return "Sorry, there was an error processing your message."
+
+    def process_message(self, embedded_message):
+        """
+        Processes the embedded message and generates a response.
+
+        Args:
+            embedded_message (any): The embedded representation of the user's message.
+
+        Returns:
+            str: A response to the user's message.
+        """
+        # Example processing logic, to be expanded based on specific use cases
+        # Here, you would typically add logic to analyze the embedded message and generate a response
+        print(f"Processing message at {datetime.datetime.now()}")
+        return "Thank you for your message. I'm currently learning to respond more effectively."
+
+    def log_interaction(self, message, response):
+        """
+        Logs the interaction between the agent and the user for analysis and improvements.
+
+        Args:
+            message (str): The original message from the user.
+            response (str): The agent's response to the user.
+        """
+        try:
+            log_message = f"User: {message}\nAgent: {response}\nLogged at: {datetime.datetime.now()}\n---\n"
+            logging.info(log_message)
+        except Exception as e:
+            logging.error(f"[{datetime.datetime.now()}] [Agent: PersonalAssistantAgent] Error logging interaction: {e}")
+
+2024-05-17 16:27:32,150 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/agents/manager.py
+# iChain/src/iChain/agents/manager.py
+from crewai import Agent
+import os
+from src.iChain.config.llm_config import get_models
+import datetime
+import logging
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(
+    filename=os.path.join(log_directory, 'manager_log.txt'),
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
+
+class ManagerAgent(Agent):
+    """
+    This class defines the Manager Agent responsible for overseeing and managing the tasks 
+    and interactions of other agents within the crew.
+    """
+
+    def __init__(self, memory, llm):
+        """
+        Initializes the Manager Agent with memory and LLM capabilities.
+
+        Args:
+            memory (object): A memory object capable of storing session data (imported from CrewAI).
+            llm (object): The language model the agent will use for generating responses.
+        """
+        super().__init__(role="Manager", verbose=True, memory=memory, llm=llm)
+
+    def manage_tasks(self, tasks):
+        """
+        Manages the given tasks by delegating them to the appropriate agents and monitoring their execution.
+
+        Args:
+            tasks (list): A list of tasks to be managed.
+        """
+        for task in tasks:
+            logger.info(f"Managing task: {task}")
+            try:
+                result = task.run()
+                logger.info(f"Task {task} completed successfully with result: {result}")
+            except Exception as e:
+                logger.error(f"Error managing task {task}: {e}")
+
+if __name__ == "__main__":
+    # Initialize memory and LLM
+    memory = True  # Memory imported from CrewAI
+    llm = get_models("groq", "llama3-70b")  # Set the manager's LLM to Groq llama3-70b
+    manager = ManagerAgent(memory, llm)
+
+    # Example task list for demonstration purposes
+    from iChain.tasks.conversation import ConversationTask
+    from iChain.agents.assistant import PersonalAssistantAgent
+    from iChain.config.llm_config import get_models
+
+    assistant_llm = get_models("groq", "llama3-8b-8192")
+    assistant = PersonalAssistantAgent(memory, get_models("ollama", "llama-base"), assistant_llm)
+    conversation_task = ConversationTask(assistant)
+    tasks = [conversation_task]
+
+    manager.manage_tasks(tasks)
+
+2024-05-17 16:27:32,151 - __main__ - INFO - File contents: /home/dbordwel/iChain/src/agents/valuator.py
+# iChain/src/iChain/agents/valuator.py
+
+from crewai import Agent
+import os
+import datetime
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from src.iChain.config.llm_config import get_models
+import logging
+
+# Ensure required NLTK resources are downloaded
+nltk.download('punkt')
+nltk.download('stopwords')
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(filename=os.path.join(log_directory, 'valuation_log.txt'), level=logging.INFO)
+
+class DataValuationAgent(Agent):
+    """
+    This class defines the Data Valuation Agent responsible for assessing the quality and value
+    of anonymized data. It determines the potential market value based on content richness and relevance.
+    """
+
+    def __init__(self, memory, llm):
+        """
+        Initializes the Data Valuation Agent with specific roles and goals.
+
+        Args:
+            memory (object): A memory object capable of storing session data (part of the CrewAI library).
+            llm (object): The language model the agent will use for generating responses.
+        """
+        super().__init__(role="Data Valuator", verbose=True, memory=memory, llm=llm)
+
+    def assess_data(self, data):
+        """
+        Assesses the value of the anonymized data based on predefined criteria such as completeness,
+        relevance, and potential demand in the market.
+
+        Args:
+            data (str): The anonymized data to be assessed.
+
+        Returns:
+            tuple: A tuple containing the assessed value and a descriptive assessment.
+        """
+        try:
+            value, assessment = self.evaluate_data_quality(data)
+            self.log_assessment(data, value, assessment)
+            return value, assessment
+        except Exception as e:
+            logging.error(f"Error assessing data: {e}")
+            return None, "Error assessing data"
+
+    def evaluate_data_quality(self, data):
+        """
+        Evaluates the quality of the data by analyzing the content using NLP and the LLM.
+
+        Args:
+            data (str): The data to evaluate.
+
+        Returns:
+            tuple: The numeric value of the data and a string describing the assessment.
+        """
+        try:
+            # Tokenize the data
+            tokens = word_tokenize(data)
+
+            # Remove stopwords
+            stop_words = set(stopwords.words('english'))
+            tokens = [token for token in tokens if token.lower() not in stop_words]
+
+            # Calculate the frequency of each token
+            freq = nltk.FreqDist(tokens)
+
+            # Calculate the average frequency of the top 10 most common tokens
+            # This helps in determining the richness and diversity of the content.
+            top_10_tokens = [token for token, freq in freq.most_common(10)]
+            avg_freq = sum([freq[token] for token in top_10_tokens]) / len(top_10_tokens)
+
+            # Use the LLM to generate a response
+            response = self.llm.generate_response(data)
+
+            # Analyze the response to determine the quality of the data
+            if "REDACTED" not in response and avg_freq > 0.5:
+                return 100, "High value - contains rich and relevant content"
+            else:
+                return 50, "Medium value - partially relevant content"
+        except Exception as e:
+            logging.error(f"Error evaluating data quality: {e}. Data: {data}")
+            return None, "Error evaluating data quality"
+
+    def log_assessment(self, data, value, assessment):
+        """
+        Logs the assessment of the data for audit and improvements.
+
+        Args:
+            data (str): The data assessed.
+            value (int): The numerical value assigned to the data.
+            assessment (str): The descriptive assessment of the data.
+        """
+        log_message = f"Data: {data}\nValue: {value}\nAssessment: {assessment}\nLogged at: {datetime.datetime.now()}\n---\n"
+        logging.info(log_message)
+
+2024-05-17 16:27:32,151 - __main__ - INFO - File contents: /home/dbordwel/iChain/local_storage/__init__.py
+# iChain/src/local_storage/__init__.py
+
+from .file_handler import FileHandler
+
+# This allows other parts of the application to import the FileHandler class directly from the local_storage package
+__all__ = ["FileHandler"]
+
+2024-05-17 16:27:32,151 - __main__ - INFO - File contents: /home/dbordwel/iChain/local_storage/file_handler.py
+# iChain/src/local_storage/file_handler.py
+import os
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import logging
+
+# Configure logging
+log_directory = "C:\\CrewAI\\iChain\\Logs"
+os.makedirs(log_directory, exist_ok=True)
+logging.basicConfig(
+    filename=os.path.join(log_directory, 'file_handler_log.txt'),
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
+
+class FileHandler:
+    """
+    Handles file operations in a specified directory. Monitors for new files and processes them
+    as needed for further CrewAI tasks.
+    """
+
+    def __init__(self, directory):
+        """
+        Initializes the FileHandler with a directory to monitor.
+
+        Args:
+            directory (str): The path to the directory to monitor for new files.
+        """
+        self.directory = directory
+        self.observer = Observer()
+
+    def start(self):
+        """
+        Starts monitoring the directory for new files and handling them accordingly.
+        """
+        event_handler = FileEventHandler(self.process_file)
+        self.observer.schedule(event_handler, self.directory, recursive=True)
+        self.observer.start()
+        logger.info(f"Monitoring {self.directory} for new files.")
+        print(f"Monitoring {self.directory} for new files.")
+
+    def stop(self):
+        """
+        Stops the directory monitoring.
+        """
+        self.observer.stop()
+        self.observer.join()
+        logger.info("Stopped monitoring the directory.")
+
+    def process_file(self, file_path):
+        """
+        Process the file that has been added to the directory.
+
+        Args:
+            file_path (str): Path to the newly added file.
+        """
+        logger.info(f"Processing file: {file_path}")
+        # Implement the file processing logic here
+        # This could include parsing, data extraction, or triggering other CrewAI tasks
+        print(f"Processing file: {file_path}")
+
+
+class FileEventHandler(FileSystemEventHandler):
+    """
+    Event handler for the file system events that triggers processing of new files.
+    """
+
+    def __init__(self, process_file_callback):
+        self.process_file_callback = process_file_callback
+
+    def on_created(self, event):
+        """
+        Called when a file or directory is created.
+
+        Args:
+            event (Event): The event object representing the file system event.
+        """
+        if not event.is_directory:
+            self.process_file_callback(event.src_path)
+
